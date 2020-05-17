@@ -1,0 +1,689 @@
+.page_index {position: relative;padding-left: 0;padding-right: 0}
+.page_index .bannerSwiper .swiper-button-next,
+.page_index .bannerSwiper .swiper-button-prev {color: #fff}
+.page_index .bannerSwiper .swiper-button-next:after,
+.page_index .bannerSwiper .swiper-button-prev:after {text-shadow: 0 0 6px rgba(0,0,0, .3)}
+.page_index .view {position: absolute;top: 50%;left: 10%;transform: translateY(-50%);padding: 40px;background: rgba(255,255,255,0.8);z-index: 30}
+.page_index .view .title {margin: 0 0 20px;font-family: 'Nanum Myeongjo', serif;font-size: 24px;line-height: 1.4em;font-weight: 900}
+.page_index .view dl {font-size: 0;}
+.page_index .view dt,
+.page_index .view dd {display: inline-block;vertical-align: top;font-size: 14px;line-height: 1.5em}
+.page_index .view dt {font-weight: 700;width: 70px}
+.page_index .view dd {width: calc(100% - 70px)}
+.page_index .view dd a {color: #7d59ff;text-decoration: underline;font-weight: 700}
+.page_index .view .under {margin: 20px 0 0}
+.page_index .view .under a {display: inline-block;padding: 10px 20px;color: #5500b5;background: #fff;border: 1px solid #5500b5;}
+.page_index .view .under a.fill {background: #5500b5;color: #fff}
+
+.main_layer_popup.popup1 {top: 5%;right: 5%}
+.main_layer_popup {position: absolute;display: none;max-width: 400px;width: 90%;z-index: 40;background: #fff;border: 2px solid #000;}
+.main_layer_popup .content {padding: 20px 40px;}
+.main_layer_popup .title {font-size: 20px;font-weight: 700;margin: 0 0 10px}
+.main_layer_popup p {word-break: keep-all;font-size: 14px;line-height: 1.4em}
+.main_layer_popup p+p {margin: 10px 0 0}
+.main_layer_popup .under {border-top: 2px solid #000;text-align: right}
+.main_layer_popup .under label {font-size: 14px;font-weight: 700;margin: 0 5px 0 0;cursor: pointer}
+.main_layer_popup .under input {vertical-align: middle}
+.main_layer_popup .under button {background: #000;padding: 9px 15px;color: #fff;border: 0}
+
+.page_about {text-align: center}
+.page_about .logo {padding: 30px 0 50px;width: 167px;margin: 0 auto}
+.page_about p {font-size: 14px;line-height: 1.9em;word-break: keep-all;margin: 0 0 3em}
+.page_about .foot {font-size: 12px;color: #959595}
+
+.page_local {max-width: 800px;margin-left: auto;margin-right: auto}
+.page_local .paragraph {line-height: 1.8em}
+.page_local .paragraph h3 {font-size: 18px;margin: 0 0 30px;font-weight: 900}
+.page_local .paragraph .pa {padding: 30px 0}
+.page_local .paragraph .pa+.pa {border-top: 1px solid #eee;}
+.page_local .paragraph .half {display: inline-block;}
+.page_local .paragraph .half+.half {margin-left: 50px}
+.page_local .paragraph dl {white-space: nowrap}
+.page_local .paragraph dt,
+.page_local .paragraph dd {display: inline-block;vertical-align: top}
+.page_local .paragraph dt {font-weight: 700;width: 7em}
+
+.page_faq .list {padding: 0 15px}
+.page_faq .list li {padding: 25px 0;word-break: keep-all}
+.page_faq .list li+li {border-top: 1px solid #eee}
+.page_faq .list li .q,
+.page_faq .list li .a {position: relative;padding: 0 0 0 40px;line-height: 1.5em}
+.page_faq .list li .q {font-weight: 700;margin: 0 0 25px}
+.page_faq .list li .a {}
+.page_faq .list li .q:before,
+.page_faq .list li .a:before {position: absolute;left: 0;top: -4px;display: inline-block;text-align: center;font-size: 13px;color: #fff;border-radius: 50%;width: 30px;height: 30px;line-height: 30px;font-weight: 700;}
+.page_faq .list li .q:before {content: 'Q';background: #7800ff}
+.page_faq .list li .a:before {content: 'A';background: #b5b5b5}
+
+.cus_tb {display: flex;flex-direction: column;max-width: 460px;margin: 0 auto}
+.cus_tb h3 {border-bottom: 1px solid #ccc;color: #8600f6;padding-bottom: 10px;margin-bottom: 25px;font-weight: 900;font-size: 20px;}
+.cus_tb .msg {font-size: 14px;margin: 8px 0 0}
+.cus_tb .tr {display: flex;padding: 0 15px}
+.cus_tb .tr + .tr {margin: 10px 0 0}
+.cus_tb .th {width: 120px;line-height: 30px;font-weight: 700}
+.cus_tb .td {width: calc(100% - 120px);font-size: 0}
+.cus_tb .td input,
+.cus_tb .td button {font-size: 15px}
+.cus_tb .td input[type="text"],
+.cus_tb .td input[type="file"],
+.cus_tb .td select {height: 35px;padding: 5px;border: 1px solid #e1e1e1;font-size: 15px}
+.cus_tb .td .tb_btn {background: #fff;height: 35px;padding: 5px;border: 1px solid #e1e1e1;color: #555;font-size: 13px}
+.cus_tb .td .tb_btn1 {}
+.cus_tb .td .basic_input {width: 100%}
+.cus_tb .td .four_input {width: calc(25% - 8px);flex-grow: 0;margin: 0 10px 10px 0}
+.cus_tb .td .four_input:nth-child(4n) {margin-right: 0}
+.cus_tb .td .three_input {width: calc(33.33% - 7px);flex-grow: 0;}
+.cus_tb .td .three_input+.three_input {margin: 0 0 0 10px}
+.cus_tb .td .two_input {width: calc(50% - 5px)}
+.cus_tb .td .two_input+.two_input {margin: 0 0 0 10px}
+.cus_tb .td.adr button {width: 100px;text-align: center;}
+.cus_tb .td.adr input {width: calc(100% - 110px);margin: 0 0 0 10px}
+.cus_tb .td.adr .adr2 input {margin: 7px 0 0;width: 100%}
+.cus_tb .basic_file {width: 100%}
+.cus_tb .basic_radio {display: inline-block}
+.cus_tb .basic_radio input[type="radio"] {display: none}
+.cus_tb .basic_radio input[type="radio"]:checked + label {border: solid 1px #ad86ff;color: #9665fe;}
+.cus_tb .basic_radio label {display: block;border: solid 1px #e1e1e1;width: 100%;height: 35px;line-height: 35px;font-size: 12px;font-weight: 700;text-align: center;color: #707070;cursor: pointer}
+
+.cus_tb .basic_checkbox {display: inline-block}
+.cus_tb .basic_checkbox input[type="checkbox"] {display: none}
+.cus_tb .basic_checkbox input[type="checkbox"]:checked + label {border: solid 1px #ad86ff;color: #9665fe;}
+.cus_tb .basic_checkbox label {display: block;border: solid 1px #e1e1e1;width: 100%;height: 35px;line-height: 35px;font-size: 12px;font-weight: 700;text-align: center;color: #707070;cursor: pointer}
+.cus_tb .id_td {}
+.cus_tb .id_td .id_check {height: 35px;padding: 5px 0;width: 65px;border: 1px solid #e1e1e1;font-size: 13px;background: #eee;}
+
+.f_btn_group {margin: 30px 0 0;text-align: center;}
+.f_btn_group .btn {font-size: 18px;border: 1px solid #6c00e5;color: #6c00e5;background: #fff;padding: 10px 40px;}
+.f_btn_group .btn.btn_1 {margin: 0 10px 0 0}
+.f_btn_group .btn.btn_2 {background: #6c00e5;color: #fff}
+.cus_tb.type2 {max-width: 900px}
+.cus_tb.type2 .th {width: 160px}
+.cus_tb.type2 .td {width: calc(100% - 160px);}
+.cus_tb.type2 .td .basic_input,
+.cus_tb.type2 .td.size1 {width: 350px}
+.cus_tb.type2 .td .size1 {width: 350px}
+.cus_tb.type2 .td .size2 {width: 470px}
+.cus_tb.type2 .td.adr input {width: 240px;}
+.cus_tb.type2 .td.adr .adr2 input {display: block;width: 350px}
+
+.page_application .column1 {margin: 0 0 50px}
+
+.text_style {font-size: 15px;line-height: 1.6em;word-break: keep-all}
+.text_style p {word-break: keep-all}
+.text_style .column {display: flex;padding: 40px 0}
+.text_style .column + .column {border-top: 1px solid #eee;}
+.text_style .column:nth-child(2n) .subject .ico {background: #ece8ff;color: #1b1b19;}
+.text_style .subject {min-width: 260px;padding: 0 15px}
+.text_style .subject .ico {display: inline-block;color: #fff;font-size: 30px;margin: 0;font-weight: 400;border: 1px solid #eee;border-radius: 50%;width: 65px;height: 65px;line-height: 65px;text-align: center;vertical-align: middle;background: #6b00e4}
+.text_style .subject b {display: inline-block;margin-left: 10px;vertical-align: middle;font-size: 16px}
+.text_style .subject + .content {width: 100%}
+.text_style .btn {display: inline-block;background: #fff;padding: 7px 30px;margin: 15px 0;border: 1px solid #6b00e4;color: #000;font-size: 14px}
+.text_style h4 {margin: 10px 0}
+.text_style .info_box {background: #f9f9f9;margin: 20px 0;padding: 15px 30px 10px;border: 1px solid #bfbfbf;font-size: 13px;}
+.text_style .info_box dl {}
+.text_style .info_box dl + dl {margin: 10px 0 0}
+.text_style .info_box dt {font-weight: 700;margin: 0 0 }
+.text_style .two_button {font-size: 0;margin: 10px 0}
+.text_style .two_button button {display: inline-block;border: 0;width: 85px;height: 34px;font-size: 14px;background: #8600f6;border: 1px solid #8600f6;font-weight: 700}
+.text_style .two_button button.b1 {color: #fff}
+.text_style .two_button button.b2 {background: #fff;color: #8600f6}
+.text_style .highlight {color: #f60;}
+.text_style .half_box {display: flex}
+.text_style .half {width: 50%}
+.text_style .half:first-child {border-right: 2px solid #eee}
+.text_style .half:last-child {padding-left: 40px}
+.text_style dl.type2 {font-size: 0}
+.text_style dl.type2 dt,
+.text_style dl.type2 dd {display: inline-block;vertical-align: top;font-size: 13px}
+.text_style dl.type2 dt {width: 90px}
+.text_style dl.type2 dd {width: calc(100% - 90px)}
+.text_style dl.type3 {font-size: 0}
+.text_style dl.type3 dt,
+.text_style dl.type3 dd {display: inline-block;vertical-align: top;font-size: 13px}
+.text_style dl.type3 dt {width: 100px}
+.text_style dl.type3 dd {width: calc(50% - 50px)}
+
+.page_guide01 .order {text-align: center;margin: 0 0 20px}
+.page_guide01 .order li {display: inline-block;}
+.page_guide01 .order li b {display: block;color: #6b00e4;font-size: 30px;font-weight: 900;border: 1px solid #eee;margin: 10px;border-radius: 50%;width: 80px;height: 80px;line-height: 80px;}
+.page_guide01 .order li:nth-child(2n) b {background: #eee;}
+.page_guide01 .order strong {display: block;font-size: 14px;font-weight: 700}
+
+.page_guide02 .contents {border-top: 1px solid #eee;margin: 30px 0 0}
+
+.page_mypage .column + .column {margin: 50px 0 0}
+
+.page_bidding {}
+
+.mypage_layout {padding: 0 20px;margin: 0 0 50px}
+.mypage_layout h5 {float: left;width: 160px;clear: both;color: #6c00e6;margin: 0 0 15px;line-height: 1.6em}
+.mypage_layout p {line-height: 1.6em}
+.mypage_layout .box { float: left}
+.mypage_layout .highlight {color: red}
+
+.bo_table {}
+.bo_table.size1 {width: calc(100% - 160px);margin-left: 160px;padding: 0 20px}
+.bo_table .bo_head {margin: 0 0 10px}
+.bo_table .bo_head select {border-color: #d2d6de;height: 34px;padding: 0 10px;color: #555;font-size: 14px}
+.bo_table table {width: 100%;border-collapse: collapse;border-spacing: 0;font-size: 14px}
+.bo_table table thead th {border-top: 1px solid #d9d9d9;border-bottom: 1px solid #d9d9d9;padding: 10px;color:#8b8b8b;}
+.bo_table table tbody td {border-bottom: 1px solid #ddd;padding: 10px;}
+.bo_table table .info_title {margin: 0 0 5px}
+.bo_table table .date {font-size: 13px}
+.bo_table table .drw_title {color: #6c00e6;font-weight: 700;margin: 0 0 5px}
+.bo_table table .btn_small {padding: 4px 8px;background: #eae8e9}
+.bo_table table .btn_small.red {background: red;color:#fff}
+.bo_table table .btn_small.green {background: green;color:#fff}
+.bo_table table .confirmation .btn_small {cursor: pointer}
+
+.bo_table table.tbl_type1 td {text-align: center;}
+
+.pagination {display: inline-block;width: 100%;margin: 20px auto;text-align: center;}
+.pagination > li {display: inline-block;text-align: center;}
+.pagination > li > a, .pagination > li > span {position: relative;float: left;padding: 6px 12px;margin-left: -1px;line-height: 1.42857143;color: #337ab7;text-decoration: none;background-color: #fff;border: 1px solid #ddd;}
+.pagination>li>a, .pagination>li>span {margin: 0 5px;padding: 10px;min-width: 40px;text-align: center;}
+.pagination > li > a {background: #fafafa;color: #666;}
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {color: #777;cursor: not-allowed;background-color: #fff;border-color: #ddd;}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {margin-left: 0;border-top-left-radius: 4px;border-bottom-left-radius: 4px;}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {z-index: 3;color: #8600f6;cursor: default;background-color: #fff;border-color: #8600f6;}
+.pagination > li:last-child > a, .pagination > li:last-child > span {border-top-right-radius: 4px;border-bottom-right-radius: 4px;}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {z-index: 2;color: #23527c;background-color: #eee;border-color: #ddd;}
+
+.page_login {display: flex}
+.page_login h4 {font-size: 22px;letter-spacing: -1px;font-weight: 900;margin-bottom: 30px;}
+.page_login .column {width: 50%;padding: 50px}
+.page_login .column.c1 {border-right: 1px solid #eee}
+.page_login .column.c2 {font-size: 14px;line-height:1.5em}
+.page_login .field {float: left;width: calc(100% - 100px);padding: 0 15px 0 0}
+.page_login .field input {width: 100%;height: 47px;border: 1px solid #d2d6de;padding: 6px 12px}
+.page_login .field .id {margin: 0 0 10px}
+.page_login .login_form .submit {float: left;height: 104px;background: #6c00e6;color: #fff;width: 100px;border: 0;outline: none;text-align: center;line-height: 104px;font-weight: 700;}
+.page_login .login_option {margin: 10px 0;font-size: 14px}
+.page_login .login_option input {margin: 0 3px 0 0;vertical-align: middle}
+.page_login .login_option label {font-weight: 700;vertical-align: middle}
+.page_login .login_option .id_save {margin: 0 10px 0 0}
+.page_login .under {border-top: 1px solid #eee;padding: 15px 0;margin: 20px 0 0}
+.page_login .under a {font-weight: 700;padding: 0 15px;display: inline-block;font-size: 14px;height: 14px;line-height: 14px}
+.page_login .under a:first-child {padding-left: 0;border-right: 1px solid #333;}
+.page_login .button_gorup {margin: 10px 0 65px}
+.page_login .button_gorup a,
+.page_login .button_gorup button {display: inline-block;padding: 12px 30px;border-radius: 0 !important;border: 0;vertical-align: top;font-size: 14px;line-height: 1}
+.page_login .button_gorup a {background: #e5e5e5;color: #333;}
+.page_login .button_gorup button {background: #6c00e6;color: #fff;font-weight: 700;}
+.page_login .under dt {margin: 0 0 10px}
+
+.common_layer {position: fixed;width: 100%;height: 100%;top: 0;left: 0;text-align: center;background: rgba(0,0,0,0.5);overflow: auto;font-size: 0;padding: 20px;z-index: 100;}
+.common_layer:before {content: '';height: 100%;display: inline-block;vertical-align: middle}
+.common_layer .layer_content {position: relative;vertical-align: middle;display: inline-block;width: 585px;padding: 25px;background: #fff;text-align: left;font-size: 15px}
+.common_layer .common_layer_closed {position: absolute;top: 12px;right: 12px;width: 30px;height: 30px;cursor: pointer}
+.common_layer .common_layer_closed:before {content: '';position: absolute;left: 1px;top: 13px;width: 24px;height: 1px;background: #555;transform: rotate(45deg);}
+.common_layer .common_layer_closed:after {content: '';position: absolute;left: 1px;top: 13px;width: 24px;height: 1px;background: #555;transform: rotate(-45deg);}
+
+.common_layer .id_pw_find {max-width: 400px;}
+.common_layer .id_pw_find h4 {font-size: 18px;margin: 0 0 15px}
+.common_layer .id_pw_find input {display: block;border: 1px solid #d2d6de;padding: 0 10px;font-size: 14px;;width: 100%;height: 47px;font-size: 14px}
+.common_layer .id_pw_find input+input {margin: 10px 0 0}
+.common_layer .id_pw_find .button_group {text-align: center;margin: 10px 0 0}
+.common_layer .id_pw_find button {outline: 0;border: 0;font-weight: 700;padding: 12px 30px;border-radius: 0 !important;}
+.common_layer .id_pw_find .submit {background: #6c00e6;color: #fff;}
+.common_layer .id_pw_find .cancel {background: #e5e5e5;color: #333;}
+
+.layer_content.register {width: 695px}
+.layer_content.register .column + .column {margin: 50px 0 0;}
+.layer_content.register .step {display: flex;margin: 30px 0 30px}
+.layer_content.register .step button {height: 45px;background: #fff;color: #b7b7b7;border: 1px solid #ccc;width: 50%;font-size: 15px;font-weight: 700}
+.layer_content.register .step button:first-child {border-right: 0}
+.layer_content.register .step button i {font-size: 25px;vertical-align: middle;margin: 0 3px 0 0}
+.layer_content.register .step button.active {color: #636363;background: #f4f4f4}
+.layer_content.register .step button.active i {color: #ff5433}
+.layer_content.register .step_content {display: none;}
+.layer_content.register .step_content.active {display: block;}
+.layer_content.register .step1 {}
+.layer_content.register .step1 .agree-text {height: 120px;max-height: 120px;overflow-y: auto;border: 1px solid #eee;margin-bottom: 10px;padding: 20px;font-size: 12px;line-height: 1.5em}
+.layer_content.register .step1 .form-group {}
+.layer_content.register .step1 .form-group + .form-group {margin-top: 30px}
+.layer_content.register .step1 .form-group h4 {margin: 0 0 10px}
+.layer_content.register .step1 .form-group .agree.control-label {display: block;text-align: right;font-size: 13px}
+.layer_content.register .step1 .form-group .agree.control-label input {vertical-align: top;margin: 2px 0 0}
+.layer_content.register .step1 .atep1_button {margin-top: 15px;text-align: center;}
+.layer_content.register .step1 .atep1_button label,
+.layer_content.register .step1 .atep1_button button {border: 1px solid #e1e1e1;border-radius: 3px;padding: 10px 25px;background: #fff;}
+.layer_content.register .step1 .atep1_button label {margin: 0 10px 0 0}
+.layer_content.register .step1 .atep1_button button.active {background: #ff5433;color: #fff;border-color: #ff5433}
+
+.agree_text_layout {font-size: 14px;line-height: 1.5em}
+.agree_text_layout h2 {font-size: 18px;margin: 0 0 15px}
+
+.bo_list {}
+.bo_list.type2 {}
+.bo_list.type2 li {display: flex;padding: 35px 0 25px;border-top: 1px solid #d9d9d9}
+.bo_list.type2 li:last-child {border-bottom: 1px solid #d9d9d9}
+.bo_list.type2 li:after {content: '';display: block;clear: both;}
+.bo_list.type2 li .field {float: left;padding: 0 10px}
+.bo_list.type2 li .field.f1 {min-width: 370px;width:35%;font-size: 22px}
+.bo_list.type2 li .field.f2 {min-width: 390px;width:35%;line-height: 1.6em}
+.bo_list.type2 li .field.f2 table {width: 100%}
+.bo_list.type2 li .field.f2 table th {color: #9fa0a0;font-weight: 400}
+.bo_list.type2 li .field.f3 {min-width: 100px;width:15%;line-height: 1.6em;padding-left: 0.9em}
+.bo_list.type2 li .field.f4 {min-width: 90px;width:15%;display: flex;align-items: center}
+.bo_list.type2 li .field.f4 a {display: inline-block;font-weight: 700;color: #fff;background: #6c00e6;width: 70px;height: 30px;line-height: 30px;text-align: center;}
+
+.page_title_field {display: flex;padding: 35px 0}
+.page_title_field.border {border-bottom: 1px solid #d5d5d5}
+.page_title_field .page_subject {text-align: left;padding: 0 40px 0 0}
+.page_title_field .page_subject .sup {color: #6c00e5;font-size: 14px;display: block;;margin: 0 0 15px}
+.page_title_field table {}
+.page_title_field table th {color: #b2b2b2;font-weight: 400;padding: 0 5px 0 0}
+.page_title_field table td {}
+
+.page_online-auction {}
+.page_online-auction .bo_top {display: flex;justify-content: space-between;margin: 0 0 30px}
+.page_online-auction .bo_top .search_box {font-size: 0.9em}
+.page_online-auction .bo_top .search_box select {float: left;height: 34px;background: #fff;padding: 0 5px;border: 1px solid #ccc}
+.page_online-auction .bo_top .search_box input {float: left;width: 180px;height: 34px;background: #fff;padding: 0 5px;border: 1px solid #ccc;border-left: 0}
+.page_online-auction .bo_top .search_box button {float: left;height: 34px;background: #fff;padding: 0 10px;border: 0;background: #8600f6;color: #fff;font-weight: 700}
+.page_online-auction .bo_top .align_box {display: flex}
+.page_online-auction .bo_top .align_box .align1 {display: flex}
+.page_online-auction .bo_top .align_box .align1 button {font-size: 20px;border: 0;color: #bbb;background: #fff;outline: none}
+.page_online-auction .bo_top .align_box .align1 button:first-child {margin: 0 10px 0 0}
+.page_online-auction .bo_top .align_box .align1 button.on {color: #535353}
+.page_online-auction .bo_top .align_box .align1 button i {}
+.page_online-auction .bo_top .align_box select {width: 200px;height: 34px;background: #fff;padding: 0 5px;border: 1px solid #ccc;margin: 0 0 0 20px}
+.page_online-auction .tbl_group {text-align: center;letter-spacing: -0.06em;}
+.page_online-auction .tbl_group .d1 {width: 80px}
+.page_online-auction .tbl_group .d2 {width: 100px}
+.page_online-auction .tbl_group .d3 {width: 135px}
+.page_online-auction .tbl_group .d4 {width: 170px}
+.page_online-auction .tbl_group .d5 {width: 130px}
+.page_online-auction .tbl_group .d6 {width: 130px}
+.page_online-auction .tbl_group .d7 {width: 115px}
+.page_online-auction .tbl_group .d8 {width: 80px}
+.page_online-auction .tbl_group .d8 {width: 80px}
+.page_online-auction .tbl_group .d9 {width: 100px}
+.page_online-auction .tbl_group .thead {display: flex}
+.page_online-auction .tbl_group .thead div {padding: 10px 0;border-top: 1px solid #d9d9d9;border-bottom: 1px solid #d9d9d9}
+.page_online-auction .tbl_group .list {}
+.page_online-auction .tbl_group .list > li {display: flex}
+.page_online-auction .tbl_group .list > li > div {padding: 12px;display: flex;justify-content: center;align-items: center;line-height: 1.5em;border-bottom: 1px solid #d9d9d9}
+.page_online-auction .tbl_group .list .d1 {color: red}
+.page_online-auction .tbl_group .list .d2 {padding-left: 10px;padding-right: 10px}
+.page_online-auction .tbl_group .list .d2 img {max-width: 100%;height: auto}
+.page_online-auction .tbl_group .list .d5 b {margin: 0 0 0 3px;display: none}
+.page_online-auction .tbl_group .list .d9 button {display: block;width: 70px;font-weight: 700;border: 1px solid #8600f6;background: #fff;color: #8600f6;height: 30px;font-size: 14px}
+.page_online-auction .tbl_group .list .d9 button + button {margin: 5px 0 0}
+.page_online-auction .tbl_group .list .d9 .d9_btn-full {background: #8600f6;color: #fff}
+.page_online-auction .tbl_group .list .highlight {color: #f60;font-weight: 700}
+.page_online-auction .tbl_group.gallery_mode .thead {display: none}
+.page_online-auction .tbl_group.gallery_mode .list {display: flex;flex-wrap: wrap}
+.page_online-auction .tbl_group.gallery_mode .list > li {width: 25%;display: flex;flex-direction: column;border: 1px solid #d6d6d6;border-right: 0;margin-bottom: 30px;font-size: 14px}
+.page_online-auction .tbl_group.gallery_mode .list > li:nth-child(4n),
+.page_online-auction .tbl_group.gallery_mode .list > li:last-child {border-right: 1px solid #d6d6d6}
+.page_online-auction .tbl_group.gallery_mode .list > li > div {width: 100%;border-bottom: 0;justify-content: flex-start;text-align: left}
+.page_online-auction .tbl_group.gallery_mode .list .d1 {order: 1;padding: 10px 10px 0;color: inherit}
+.page_online-auction .tbl_group.gallery_mode .list .d2 {order: -1;margin: 10px 0;height: 250px;overflow: hidden;justify-content: center}
+.page_online-auction .tbl_group.gallery_mode .list .d3 {order: 2;padding: 0 10px}
+.page_online-auction .tbl_group.gallery_mode .list .d3 p:nth-child(1) {font-size: 1.2em}
+.page_online-auction .tbl_group.gallery_mode .list .d3 p:nth-child(2),
+.page_online-auction .tbl_group.gallery_mode .list .d3 p:nth-child(3) {display: inline}
+.page_online-auction .tbl_group.gallery_mode .list .d4 {order: 4;border-bottom: 1px solid #d6d6d6;font-size: 0.9em}
+.page_online-auction .tbl_group.gallery_mode .list .d5 {order: 7;display: flex;justify-content: space-between;padding: 5px 10px 0}
+.page_online-auction .tbl_group.gallery_mode .list .d5:before {content: '현재'}
+.page_online-auction .tbl_group.gallery_mode .list .d5 b {display: inline}
+.page_online-auction .tbl_group.gallery_mode .list .d6 {order: 6;display: flex;justify-content: space-between;padding: 5px 10px 0}
+.page_online-auction .tbl_group.gallery_mode .list .d6:before {content: '추정'}
+.page_online-auction .tbl_group.gallery_mode .list .d6 br {display: none}
+.page_online-auction .tbl_group.gallery_mode .list .d7 {order: 5;display: flex;justify-content: space-between;padding: 10px 10px 0}
+.page_online-auction .tbl_group.gallery_mode .list .d7:before {content: '마감'}
+.page_online-auction .tbl_group.gallery_mode .list .d7 > div p {display: inline}
+.page_online-auction .tbl_group.gallery_mode .list .d8 {display: none}
+.page_online-auction .tbl_group.gallery_mode .list .d9 {order: 8}
+.page_online-auction .tbl_group.gallery_mode .list .d9 button {display: inline-block;vertical-align: top;margin-top: 0}
+
+.page_online-auction-d {width: 1040px;margin-left: auto;margin-right: auto}
+.page_online-auction-d .detail_top {display: flex;padding: 10px 0;}
+.page_online-auction-d .detail_top .sns {width: 600px}
+.page_online-auction-d .detail_top .sns a {color: #c9c9ca;font-size: 15px}
+.page_online-auction-d .detail_top .timer {width: 440px}
+.page_online-auction-d .detail_top .timer dl {display: flex;font-size: 14px}
+.page_online-auction-d .detail_top .timer dt {color: #bcbcbc;margin-right: 10px;font-weight: 700}
+.page_online-auction-d .detail_top .timer dd {margin-right: 10px}
+.page_online-auction-d .detail_top .timer dd.hightlight {color: #f60}
+.page_online-auction-d .detail_contents {display: flex;flex-wrap: wrap}
+.page_online-auction-d .detail_contents .cont_1 {width: 600px;margin-bottom: 50px}
+.page_online-auction-d .detail_contents .cont_1 .detail_swiper {width: 500px;height: 380px;margin: 0}
+.page_online-auction-d .detail_contents .cont_1 {position: relative}
+.page_online-auction-d .detail_contents .cont_1 .detail_swiper {border: 1px solid #d6d6d6;}
+.page_online-auction-d .detail_contents .cont_1 .swiper-slide {text-align: center;}
+.page_online-auction-d .detail_contents .cont_1 .swiper-slide img {max-width: 100%;max-height: 100%;height: auto}
+.page_online-auction-d .detail_contents .cont_1 .detail_swiper-thumbs {margin: 0;position: absolute;top: 0;right: 25px;height: 380px}
+.page_online-auction-d .detail_contents .cont_1 .detail_swiper-thumbs .swiper-slide {border: 1px solid #d6d6d6;}
+.page_online-auction-d .detail_contents .cont_1 .detail_swiper-thumbs .swiper-slide .thumb {width: 60px;height: 70px;background-size: cover;background-position: center}
+.page_online-auction-d .detail_contents .cont_2 {width: 440px;border-top: 1px solid #d9d9d9;padding: 15px 0;margin-bottom: 50px}
+.page_online-auction-d .detail_contents .cont_2 .pic_info {}
+.page_online-auction-d .detail_contents .cont_2 .pic_info li {margin: 0 0 13px;line-height: 1.4em}
+.page_online-auction-d .detail_contents .cont_2 .pic_info .li_1 {font-size: 30px;color: #d6d6d6;font-weight: 900;}
+.page_online-auction-d .detail_contents .cont_2 .state {border-top: 1px solid #d9d9d9;padding: 15px 0 0}
+.page_online-auction-d .detail_contents .cont_2 .state li {display: flex;line-height: 30px;height: 30px;margin: 0 0 4px;font-size: 14px}
+.page_online-auction-d .detail_contents .cont_2 .state li .hightlight {color: #f60}
+.page_online-auction-d .detail_contents .cont_2 .state li span {border: 1px solid #d9d9d9;width: 75px;height: 30px;margin-right: 10px;margin-bottom: 20px;text-align: center;}
+.page_online-auction-d .detail_contents .cont_2 .state li span {}
+.page_online-auction-d .detail_contents .cont_2 .btn_group {display: flex;justify-content: space-between;margin: 11px 0 0}
+.page_online-auction-d .detail_contents .cont_2 .btn_group > div {display: flex}
+.page_online-auction-d .detail_contents .cont_2 .btn_group a, 
+.page_online-auction-d .detail_contents .cont_2 .btn_group button {border: 1px solid #d9d9d9;width: 75px;height: 40px;background: #fff;text-align: center;line-height: 40px} 
+.page_online-auction-d .detail_contents .cont_2 .btn1 a {border-right: 0}
+.page_online-auction-d .detail_contents .cont_2 .btn2 {}
+.page_online-auction-d .detail_contents .cont_2 .btn2 button {font-weight: 700}
+.page_online-auction-d .detail_contents .cont_2 .btn2 .b1 {border: 1px solid #6c00e5;color: #6c00e5;width: 80px}
+.page_online-auction-d .detail_contents .cont_2 .btn2 .b2 {border: 1px solid #6c00e5;background: #6c00e5;color: #fff;width: 120px;}
+.page_online-auction-d .detail_contents .cont_title {border-bottom: 1px solid #d9d9d9;padding: 0 0 10px;margin: 0 0 10px}
+.page_online-auction-d .detail_contents .cont_3 {padding-bottom: 15px;width: 500px;margin-bottom: 50px}
+.page_online-auction-d .detail_contents .cont_3 .content {color: #a9a9a9;line-height: 1.4em}
+.page_online-auction-d .detail_contents .cont_3 .content li+li {margin: 10px 0 0}
+.page_online-auction-d .detail_contents .cont_4 {width: 500px;margin-left: 40px;margin-bottom: 50px}
+.page_online-auction-d .detail_contents .cont_4 .content {font-size: 14px}
+.page_online-auction-d .detail_contents .cont_4 .content dl {margin: 0 0 40px;display: none}
+.page_online-auction-d .detail_contents .cont_4 .content dl:first-child {display: block}
+.page_online-auction-d .detail_contents .cont_4 .content dt {font-weight: 700;margin: 0 0 15px}
+.page_online-auction-d .detail_contents .cont_4 .content dd {color: #a9a9a9}
+.page_online-auction-d .detail_contents .cont_4 .btn_group {display: flex;justify-content: space-between}
+.page_online-auction-d .detail_contents .cont_4 .btn_group button {padding: 6px 12px;border: 1px solid #6c00e6;background: #fff;color: #6c00e6;font-size: 14px}
+.page_online-auction-d .detail_contents .cont_5 {width: 100%}
+.page_online-auction-d .detail_contents .cont_5 ul {width: 100%;display: flex;flex-wrap: wrap;}
+.page_online-auction-d .detail_contents .cont_5 li {width: 163px;height: 163px;border: 1px solid #d6d6d6;padding: 5px;margin: 0 10px 10px 0}
+.page_online-auction-d .detail_contents .cont_5 li a {display: flex;height: 100%;justify-content: center;align-items: center;overflow: hidden}
+.page_online-auction-d .detail_contents .cont_5 {}
+
+.detail_big_view_layer {display: none;position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: #fff;z-index: 100}
+.detail_big_view_layer .big_swiper {margin: 90px 0 0;width: 90%;height: calc(100vh - 140px);margin-left: auto;margin-right: auto;padding-bottom: 60px}
+.detail_big_view_layer .big_swiper .swiper-slide {text-align: center;}
+.detail_big_view_layer .big_swiper .swiper-slide img {max-width: 100%;height: 100%}
+.detail_big_view_layer .swiper-container-horizontal>.swiper-pagination-bullets {bottom: 5px}
+.detail_big_view_layer .swiper-pagination-bullet-active {background: #535353}
+.detail_big_view_layer .closed {position: absolute;top: 20px;right: 30px;width: 40px;height: 40px;background: none;border: 0;outline: none}
+.detail_big_view_layer .closed:before {content: '';position: absolute;top: 17px;left: -4px;width: 45px;height: 1px;background: #717171;transform: rotate(45deg)}
+.detail_big_view_layer .closed:after {content: '';position: absolute;top: 17px;left: -4px;width: 45px;height: 1px;background: #717171;transform: rotate(-45deg)}
+.detail_big_view_layer .swiper-button-next,
+.detail_big_view_layer .swiper-button-prev {color: #d2d2d2;font-weight: 900;transform: scale(0.9, 1.3)}
+.detail_big_view_layer .swiper-pagination .number {margin: 0 0 0 10px}
+.detail_big_view_layer .swiper-pagination .number .current_index {color: #ff3f19}
+
+.auction_status {}
+.auction_status .title_bar {display: flex;justify-content: space-between;margin: 0 0 15px}
+.auction_status .title_bar h4 {font-size: 18px;font-weight: 400}
+.auction_status .title_bar button {background: #6c00e6;color: #fff;outline: 0;border: 0;font-weight: 700;font-size: 13px;padding: 6px 10px;border: 1px solid #6c00e6;}
+.auction_status table {border-spacing: 0;width: 100%;margin: 0 0 15px}
+.auction_status table thead th {background: #eee;font-size: 12px;padding: 5px 6px;text-align: center;}
+.auction_status table tbody td {background: #fff;font-size: 12px;padding: 5px 6px;text-align: center;border-bottom: 1px solid #eee;color: #7d7d7d;}
+.auction_status .close_btn {background-color: #f4f4f4;color: #444;border: 1px solid #ddd;display: inline-block;padding: 6px 12px;}
+
+.page_online-auction-com {}
+.page_online-auction-com .highlight {color: #f60}
+.page_online-auction-com .tb1 {border-collapse: collapse;width: 100%;font-size: 14px;margin: 0 0 10px}
+.page_online-auction-com .tb1 thead th {border-top: 1px solid #d9d9d9;border-bottom: 1px solid #d9d9d9;padding: 6px 0}
+.page_online-auction-com .tb1 td {text-align: center;line-height: 1.4em;border-bottom: 1px solid #d9d9d9}
+.page_online-auction-com .notice {display: flex;padding: 15px;background: #eee;margin: 0 0 10px}
+.page_online-auction-com .notice .title {font-weight: 700;width: 170px;color: #7d7d7d}
+.page_online-auction-com .notice .content {line-height: 1.5em;font-size: 14px;word-break: keep-all;color: #7d7d7d;}
+.page_online-auction-com .state {display: flex;border: 1px solid #d6d6d6;}
+.page_online-auction-com .state .con1 {display: flex;padding: 15px;width: 50%}
+.page_online-auction-com .state .con1 .title {font-weight: 700;width: 120px}
+.page_online-auction-com .state .con1 table {width: calc(100% - 120px);font-size: 13px}
+.page_online-auction-com .state .con1 table th {text-align: left}
+.page_online-auction-com .state .con1 table th {width: 90px;color: #9d9d9d;padding: 5px 0}
+.page_online-auction-com .state .con1 table td {padding: 5px 0}
+.page_online-auction-com .state .con1 table td .cal {width: 100%;display: flex;height: 35px;border: 1px solid #d2d6de;max-width: 400px}
+.page_online-auction-com .state .con1 table td .cal input {border: 0;background: #eee;width: calc(100% - 68px);padding: 0 10px;font-weight: 700;font-size: 18px}
+.page_online-auction-com .state .con1 table td .cal button {background: #fff;border: 0;width: 34px;font-size: 23px;font-weight: 700;color: #444}
+.page_online-auction-com .state .con1 table td .cal button.add {border-right: 1px solid #d2d6de}
+.page_online-auction-com .state .con2 {width: 50%;border-left: 1px solid #d6d6d6;padding: 15px;max-height: 270px;overflow: auto;}
+.page_online-auction-com .state .con2 .top {margin: 0 0 5px;display: flex;justify-content: space-between}
+.page_online-auction-com .state .con2 .top .btn_group {}
+.page_online-auction-com .state .con2 .top .btn_group button {background: #fff;border: 1px solid #6c00e6;color: #6c00e6;font-size: 14px;padding: 5px 8px}
+.page_online-auction-com .state .con2 .top .btn_group button.refresh {background: #6c00e6;color: #fff;border: 1px solid #6c00e6}
+.page_online-auction-com .state .con2 .title {font-weight: 700;}
+.page_online-auction-com .state .con2 {width: 50%}
+.page_online-auction-com .state .con2 table {border-spacing: 0;width: 100%}
+.page_online-auction-com .state .con2 thead th {background: #eee;font-size: 12px;padding: 5px 6px;text-align: center;}
+.page_online-auction-com .state .con2 tbody td {background: #fff;font-size: 12px;padding: 5px 6px;text-align: center;border-bottom: 1px solid #eee;color: #7d7d7d;}
+
+@media screen and (max-width: 1299px) {
+    .mypage_layout {margin-bottom: 0}
+    
+    .page_bidding {max-width: 840px;margin-left: auto;margin-right: auto}
+    
+    .bo_table.size1 {margin-left: 0;width: 100%}
+    
+    .bo_table table {font-size: 13px}
+    .bo_table table thead th {padding: 10px 3px}
+    .bo_table table tbody td {padding: 10px 3px}
+    
+    .mypage_layout h5 {margin: 0 0 5px}
+    .mypage_layout .box {clear: both;margin: 0 0 20px}
+    
+    .page_winning {max-width: 840px;margin-left: auto;margin-right: auto;}
+    
+    .page_title_field,
+    .page_online-auction {max-width: 1040px;margin-left: auto;margin-right: auto}
+}
+@media screen and (max-width: 1090px) {
+    .page_online-auction-d {width: 720px}
+    .page_online-auction-d .detail_top {display: block}
+    .page_online-auction-d .detail_top .sns {width: 100%;margin: 0 0 15px}
+    .page_online-auction-d .detail_top .timer {width: 100%}
+    .page_online-auction-d .detail_contents .cont_1 {width: 100%}
+    .page_online-auction-d .detail_contents .cont_1 .detail_swiper {width: 100%;margin: 0 0 15px}
+    .page_online-auction-d .detail_contents .cont_1 .detail_swiper-thumbs {position: relative;right: auto;top: auto;margin: auto;width: 340px;height: 70px}
+    .page_online-auction-d .detail_contents .cont_1 .detail_swiper-thumbs .swiper-slide {border: 0}
+    .page_online-auction-d .detail_contents .cont_2 {width: 100%}
+    .page_online-auction-d .detail_contents .cont_2 .pic_info {margin: 0 0 40px}
+    .page_online-auction-d .detail_contents .cont_3 {width: 100%}
+    .page_online-auction-d .detail_contents .cont_4 {width: 100%;margin-left: 0}
+    
+    .page_online-auction-d .detail_contents .cont_5 li {width: 170px;height: 170px}
+}
+
+@media screen and (max-width: 1040px) {
+    .text_style {font-size: 14px}
+    .page_guide01 .order {display: none;}
+    .text_style .column {display: block;padding: 20px 0}
+    .text_style .subject {padding: 0;margin: 0 0 15px}
+    .text_style .subject .ico {width: 45px;height: 45px;line-height: 45px;font-size: 23px}
+    .text_style .half_box {display: block}
+    .text_style .half:first-child {border-right: 0}
+    .text_style .half:last-child {padding-left: 0}
+    .text_style .half {width: 100%}
+    .text_style dl.type2 dt {display: block}
+    .page_guide02 .type2 dt:nth-of-type(2){margin: 10px 0 0}
+    .text_style dl.type3 dt, .text_style dl.type3 dt
+    .text_style dl.type3 dt, .text_style dl.type3 dd {display: block}
+    
+    .page_login {display: block;max-width: 570px;margin: 0 auto}
+    .page_login .column {width: 100%;padding: 20px}
+    .page_login .column.c1 {border: 0}
+    .page_login .button_gorup {margin-bottom: 20px}
+    
+    .bo_list.type2 li {display: block;position: relative}
+    .bo_list.type2 li .field {float: none}
+    .bo_list.type2 li .field.f1 {min-width: auto;width: 100%;margin: 0 0 10px}
+    .bo_list.type2 li .field.f2 {min-width: auto;width: 100%;}
+    .bo_list.type2 li .field.f2 table th {width: 70px}
+    .bo_list.type2 li .field.f3 {min-width: auto;width: 100%;margin: 5px 0 0}
+    .bo_list.type2 li .field.f3 br {display: none}
+    .bo_list.type2 li .field.f4 {min-width: auto;width: 90px;position: absolute;top: 32px;right: 0}
+    
+    .page_title_field {display: block}
+    .page_title_field .page_subject {margin: 0 0 20px}
+    .page_online-auction .bo_top .align_box .align1 {display: none}
+    
+    .page_online-auction .tbl_group.gallery_mode .list > li {width: 33.33%;font-size: 13px}
+    .page_online-auction .tbl_group.gallery_mode .list .d2 {}
+    .page_online-auction .tbl_group.gallery_mode .list > li:nth-child(4n) {border-right: 0}
+    .page_online-auction .tbl_group.gallery_mode .list > li:nth-child(3n),
+    .page_online-auction .tbl_group.gallery_mode .list > li:last-child {border-right: 1px solid #d6d6d6}
+    .page_online-auction .tbl_group .list .d9 button {width: 60px;font-size: 13px}
+    
+    .page_online-auction-com .state {display: block}
+    .page_online-auction-com .state .con1,
+    .page_online-auction-com .state .con2 {width: 100%}
+    .page_online-auction-com .state .con1 {border-bottom: 1px solid #d6d6d6}
+    .page_online-auction-com .state .con2 {border-left: 0}
+    
+    .page_online-auction-com .notice {display: block;}
+    .page_online-auction-com .notice .title {margin: 0 0 15px}
+}
+
+@media screen and (max-width: 850px) {
+    .mypage_layout {font-size: 14px;}
+    .bo_table table {font-size: 13px}
+    .pagination {font-size: 11px}
+    .pagination>li>a, .pagination>li>span {min-width: 25px;padding: 4px}
+    .pagination>li>a, .pagination>li>span {margin: 0}
+    
+    .bo_table .tbl_type1,
+    .bo_table .tbl_type1 tfoot,
+    .bo_table .tbl_type1 tbody,
+    .bo_table .tbl_type1 tr,
+    .bo_table .tbl_type1 th,
+    .bo_table .tbl_type1 td {display: block}
+    .bo_table .tbl_type1 .date,
+    .bo_table .tbl_type1 thead {display: none}
+    .bo_table .tbl_type1 tbody tr {display: flex;flex-direction: column}
+    .bo_table .tbl_type1 tbody tr td:nth-child(2) {order: -1}
+    .bo_table .tbl_type1 tbody td {border-bottom: 0;text-align: left;padding-top: 0}
+    .bo_table .tbl_type1 .info_title:before {content: '경매정보';font-weight: 700;display: inline-block;vertical-align: top;white-space: nowrap;width: 70px}
+    .bo_table .tbl_type1 .lot:before {content: 'LOT';font-weight: 700;display: inline-block;vertical-align: top;white-space: nowrap;width: 70px}
+    .bo_table .tbl_type1 .d_info:before {content: '작품정보';font-weight: 700;display: inline-block;vertical-align: top;white-space: nowrap;width: 70px}
+    .bo_table .tbl_type1 .price:before {content: '응찰가';font-weight: 700;display: inline-block;vertical-align: top;white-space: nowrap;width: 70px}
+    .bo_table .tbl_type1 .people:before {content: '응찰수';font-weight: 700;display: inline-block;vertical-align: top;white-space: nowrap;width: 70px}
+    .bo_table .tbl_type1 .price2:before {content: '낙찰가';font-weight: 700;display: inline-block;vertical-align: top;white-space: nowrap;width: 70px}
+    .bo_table .tbl_type1 .fees {display: none}
+    .bo_table .tbl_type1 .deposit:before {content: '입금';font-weight: 700;display: inline-block;vertical-align: top;white-space: nowrap;width: 70px}
+    .bo_table .tbl_type1 .confirmation .btn_small {font-size: 0;background: #fff;border: 1px solid #e7e7e7}
+    .bo_table .tbl_type1 .confirmation .btn_small:before {content: '낙찰확인서';font-size: 13px}
+    .bo_table .tbl_type1 .d_info_box {display: inline-block;vertical-align: top;}
+    .tbl_type1 {max-width: 400px;margin-left: auto;margin-right: auto}
+    .bo_table table .btn_small {width: 100%;display: block;text-align: center;padding: 10px 0}
+    .bo_table table .btn_small:before {content: '응찰 '}
+    .bo_table .tbl_type1 tbody tr + tr {border-top: 1px solid #eee;padding-top: 20px;margin-top: 10px}
+    .bo_table table .info_title b {font-weight: 400}
+}
+
+@media screen and (max-width: 768px) {
+    .page_index .view {position: static;transform: translateY(0);padding: 20px 25px}
+    
+    .page_about p br {display: none;}
+    
+    .page_local .paragraph .half {display: block;}
+    .page_local .paragraph .half+.half {margin-left: 0}
+    
+    .cus_tb .tr {display: block}
+    .cus_tb.type2 .th {width: 100%}
+    .cus_tb.type2 .td {width: 100%}
+    
+    .common_layer .layer_content {width: 100%}
+    
+    .bo_list.type2 li {font-size: 13px}
+    .bo_list.type2 li .field.f1 {width: calc(100% - 85px);font-size: 18px}
+    
+    .page_title_field .page_subject {font-size: 18px}
+    .page_title_field table {font-size: 13px}
+    .page_title_field {padding: 20px 0}
+    .page_online-auction .bo_top {margin-bottom: 20px;display: block}
+    .page_online-auction .bo_top .search_box {margin: 0 0 10px}
+    .page_online-auction .bo_top .search_box input {width: calc(100% - 178px);}
+    .page_online-auction .bo_top .align_box {justify-content: flex-end}
+    
+    .page_online-auction .tbl_group.gallery_mode .list > li {border-right: 1px solid #d6d6d6}
+    
+    .page_online-auction .tbl_group.gallery_mode .list {display: block}
+    .page_online-auction .tbl_group.gallery_mode .list > li {width: 100%;position: relative}
+    .page_online-auction .tbl_group.gallery_mode .list .d1 {padding-left: 41%}
+    .page_online-auction .tbl_group.gallery_mode .list .d2 {position: absolute;left: 0;width: 40%;padding-left: 10px;margin-top: 10px;padding-top: 0;align-items: flex-start;background: #fff}
+    .page_online-auction .tbl_group.gallery_mode .list .d3 {padding-left: 41%}
+    .page_online-auction .tbl_group.gallery_mode .list .d5 {padding-left: 41%}
+    .page_online-auction .tbl_group.gallery_mode .list .d6 {padding-left: 41%}
+    .page_online-auction .tbl_group.gallery_mode .list .d7 {padding-left: 41%}
+    .page_online-auction .tbl_group.gallery_mode .list > li > div {padding-left: 41%}
+    .page_online-auction .tbl_group.gallery_mode .list .d9 >div {width: 100%;display: flex}
+    .page_online-auction .tbl_group.gallery_mode .list .d9 button {width: 50%;height: 40px}
+    .page_online-auction .tbl_group.gallery_mode .list .d9 .d9_btn-o {order: -1}
+    
+    .page_online-auction-d {width: 100%}
+    .page_title_field table th {width: 60px;vertical-align: top}
+    .page_title_field table td {vertical-align: top}
+    
+    .page_online-auction-d .detail_contents .cont_5 li {width: calc(25% - 10px);height: 22vw;}
+    
+    .page_online-auction-com .tb1 {display: block;margin: 0 0 30px}
+    .page_online-auction-com .tb1 thead {display: none}
+    .page_online-auction-com .tb1 tbody {display: block}
+    .page_online-auction-com .tb1 tbody tr {display: block}
+    .page_online-auction-com .tb1 tbody td {display: flex;border-bottom: 0;text-align: left}
+    .page_online-auction-com .tb1 .td1 {position: absolute;width: 220px;margin-left: 0}
+    .page_online-auction-com .tb1 tr td {margin-left: 240px}
+    .page_online-auction-com .tb1 .td1 img {max-height: 320px}
+    .page_online-auction-com .tb1 .td2 {font-size: 20px;font-weight: 700;color: #999}
+    .page_online-auction-com .tb1 .td5:before {content: '현재가격';font-weight: 700;margin: 0 20px 0 0;color: #777}
+    .page_online-auction-com .tb1 .td3 {line-height: 24px;margin-bottom: 10px;border-bottom: 1px solid #eee;padding-bottom: 8px}
+    .page_online-auction-com .tb1 .td3:before {content: '작가정보';font-weight: 700;margin: 0 20px 0 0;color: #777}
+    .page_online-auction-com .tb1 .td4 {line-height: 24px;margin-bottom: 10px;border-bottom: 1px solid #eee;padding-bottom: 8px}
+    .page_online-auction-com .tb1 .td4:before {content: '작품정보';font-weight: 700;margin: 0 20px 0 0;color: #777}
+    .page_online-auction-com .tb1 .td5 {margin-bottom: 10px;border-bottom: 1px solid #eee;padding-bottom: 8px}
+    .page_online-auction-com .tb1 .td5:before {content: '현재가격';font-weight: 700;margin: 0 20px 0 0;color: #777}
+    .page_online-auction-com .tb1 .td6 {margin-bottom: 10px;border-bottom: 1px solid #eee;padding-bottom: 8px}
+    .page_online-auction-com .tb1 .td6:before {content: '추정가격';font-weight: 700;margin: 0 20px 0 0;color: #777}
+    .page_online-auction-com .tb1 .td6 br {display: none}
+    .page_online-auction-com .tb1 .td7 p {display: inline}
+    .page_online-auction-com .tb1 .td7:before {content: '경매마감';font-weight: 700;margin: 0 20px 0 0;color: #777}
+}
+
+@media screen and (max-width: 550px) {
+    .cus_tb.type2 .td .basic_input,
+    .cus_tb.type2 .td.size1,
+    .cus_tb.type2 .td.adr .adr2 input,
+    .cus_tb.type2 .td .size1,
+    .cus_tb.type2 .td .size2 {width: 100%}
+    .cus_tb.type2 .td.adr input {width: calc(100% - 110px)}
+    .cus_tb .td.id_td .basic_input {width: calc(100% - 65px);}
+    .cus_tb .msg {font-size: 12px}
+    
+    .layer_content.register .step {margin-bottom: 20px}
+    .layer_content.register .step button {font-size: 13px;word-break: keep-all;}
+    .layer_content.register .step button i {font-size: 15px}
+    .layer_content.register .step1 .form-group h4 {font-size: 14px}
+    .layer_content.register .step1 .atep1_button label,
+    .layer_content.register .step1 .atep1_button button {width: 100%;display: block;}
+    .layer_content.register .step1 .atep1_button label {margin: 0 0 10px}
+    
+    .page_online-auction-d .detail_top .timer dl {font-size: 13px;flex-wrap: wrap}
+    .page_online-auction-d .detail_top .timer dt {width: 60px;margin: 0 0 5px}
+    .page_online-auction-d .detail_top .timer dd {width: calc(100% - 70px);margin-bottom: 10px}
+    
+    .page_online-auction-com .tb1 .td1 {position: relative;display: flex;justify-content: center;width: 100%;margin-bottom: 10px}
+    .page_online-auction-com .tb1 tr td {margin-left: 0}
+}
+
+@media screen and (max-width: 500px) {
+    .page_local .paragraph dl {margin: 0 0 20px}
+    .page_local .paragraph dd {display: block;}
+    .bo_table .bo_head select {width: 100%;margin: 5px 0 0}
+}
+
+@media screen and (max-width: 459px) {
+    .cus_tb .tr {flex-direction: column;padding: 0}
+    .cus_tb .td {width: 100%}
+    .f_btn_group .btn {padding: 10px 20px;font-size: 15px}
+    
+    .page_login .field {width: 100%;padding-right: 0}
+    .page_login .login_form .submit {width: 100%;height: 50px;line-height: 50px;margin: 10px 0 0}
+}
+
+@media screen and (max-width: 430px) {
+    .pagination {white-space: nowrap}
+    .pagination>li>a, .pagination>li>span {min-width: 20px;padding: 1px;}
+    
+    .page_login .button_gorup a, .page_login .button_gorup button {padding: 12px 15px}
+}
+
