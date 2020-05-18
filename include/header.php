@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanummyeongjo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/default.css">
-    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/default.css?ver=20200518_12">
+    <link rel="stylesheet" href="/css/layout.css?ver=20200518_12">
     <link rel="stylesheet" href="/plugin/swiper-5.3.8/swiper.min.css">
     <script src="/js/jquery-1.11.0.min.js"></script>
     <script src="/plugin/jquery.cookie.js"></script>
     <script src="/plugin/swiper-5.3.8/swiper.min.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="/js/script.js?ver=20200518_12"></script>
 </head>
 <body>
 

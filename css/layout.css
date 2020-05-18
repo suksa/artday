@@ -49,7 +49,6 @@
 .page_faq .list li .q,
 .page_faq .list li .a {position: relative;padding: 0 0 0 40px;line-height: 1.5em}
 .page_faq .list li .q {font-weight: 700;margin: 0 0 25px}
-.page_faq .list li .a {}
 .page_faq .list li .q:before,
 .page_faq .list li .a:before {position: absolute;left: 0;top: -4px;display: inline-block;text-align: center;font-size: 13px;color: #fff;border-radius: 50%;width: 30px;height: 30px;line-height: 30px;font-weight: 700;}
 .page_faq .list li .q:before {content: 'Q';background: #7800ff}
@@ -264,7 +263,7 @@
 .bo_list.type2 li .field.f1 {min-width: 370px;width:35%;font-size: 22px}
 .bo_list.type2 li .field.f2 {min-width: 390px;width:35%;line-height: 1.6em}
 .bo_list.type2 li .field.f2 table {width: 100%}
-.bo_list.type2 li .field.f2 table th {color: #9fa0a0;font-weight: 400}
+.bo_list.type2 li .field.f2 table th {color: #9fa0a0;font-weight: 400;vertical-align: top}
 .bo_list.type2 li .field.f3 {min-width: 100px;width:15%;line-height: 1.6em;padding-left: 0.9em}
 .bo_list.type2 li .field.f4 {min-width: 90px;width:15%;display: flex;align-items: center}
 .bo_list.type2 li .field.f4 a {display: inline-block;font-weight: 700;color: #fff;background: #6c00e6;width: 70px;height: 30px;line-height: 30px;text-align: center;}
@@ -279,17 +278,17 @@
 
 .page_online-auction {}
 .page_online-auction .bo_top {display: flex;justify-content: space-between;margin: 0 0 30px}
-.page_online-auction .bo_top .search_box {font-size: 0.9em}
-.page_online-auction .bo_top .search_box select {float: left;height: 34px;background: #fff;padding: 0 5px;border: 1px solid #ccc}
+.page_online-auction .bo_top .search_box {font-size: 0.9em;display: flex}
+.page_online-auction .bo_top .search_box select {float: left;height: 34px;background: #fff;padding: 0 5px;border: 1px solid #ccc;font-size: 13px}
 .page_online-auction .bo_top .search_box input {float: left;width: 180px;height: 34px;background: #fff;padding: 0 5px;border: 1px solid #ccc;border-left: 0}
-.page_online-auction .bo_top .search_box button {float: left;height: 34px;background: #fff;padding: 0 10px;border: 0;background: #8600f6;color: #fff;font-weight: 700}
+.page_online-auction .bo_top .search_box button {float: left;height: 34px;background: #fff;width: 50px;border: 0;background: #8600f6;color: #fff;font-weight: 700;text-align: center}
 .page_online-auction .bo_top .align_box {display: flex}
 .page_online-auction .bo_top .align_box .align1 {display: flex}
 .page_online-auction .bo_top .align_box .align1 button {font-size: 20px;border: 0;color: #bbb;background: #fff;outline: none}
 .page_online-auction .bo_top .align_box .align1 button:first-child {margin: 0 10px 0 0}
 .page_online-auction .bo_top .align_box .align1 button.on {color: #535353}
 .page_online-auction .bo_top .align_box .align1 button i {}
-.page_online-auction .bo_top .align_box select {width: 200px;height: 34px;background: #fff;padding: 0 5px;border: 1px solid #ccc;margin: 0 0 0 20px}
+.page_online-auction .bo_top .align_box select {width: 200px;height: 34px;background: #fff;padding: 0 5px;border: 1px solid #ccc;margin: 0 0 0 20px;font-size: 13px}
 .page_online-auction .tbl_group {text-align: center;letter-spacing: -0.06em;}
 .page_online-auction .tbl_group .d1 {width: 80px}
 .page_online-auction .tbl_group .d2 {width: 100px}
@@ -308,6 +307,7 @@
 .page_online-auction .tbl_group .list > li > div {padding: 12px;display: flex;justify-content: center;align-items: center;line-height: 1.5em;border-bottom: 1px solid #d9d9d9}
 .page_online-auction .tbl_group .list .d1 {color: red}
 .page_online-auction .tbl_group .list .d2 {padding-left: 10px;padding-right: 10px}
+.page_online-auction .tbl_group .list .d2 > a {width: 100%}
 .page_online-auction .tbl_group .list .d2 img {max-width: 100%;height: auto}
 .page_online-auction .tbl_group .list .d5 b {margin: 0 0 0 3px;display: none}
 .page_online-auction .tbl_group .list .d9 button {display: block;width: 70px;font-weight: 700;border: 1px solid #8600f6;background: #fff;color: #8600f6;height: 30px;font-size: 14px}
@@ -439,7 +439,7 @@
 .page_online-auction-com .state .con1 table td .cal button.add {border-right: 1px solid #d2d6de}
 .page_online-auction-com .state .con2 {width: 50%;border-left: 1px solid #d6d6d6;padding: 15px;max-height: 270px;overflow: auto;}
 .page_online-auction-com .state .con2 .top {margin: 0 0 5px;display: flex;justify-content: space-between}
-.page_online-auction-com .state .con2 .top .btn_group {}
+.page_online-auction-com .state .con2 .top .btn_group {display: flex}
 .page_online-auction-com .state .con2 .top .btn_group button {background: #fff;border: 1px solid #6c00e6;color: #6c00e6;font-size: 14px;padding: 5px 8px}
 .page_online-auction-com .state .con2 .top .btn_group button.refresh {background: #6c00e6;color: #fff;border: 1px solid #6c00e6}
 .page_online-auction-com .state .con2 .title {font-weight: 700;}
@@ -518,7 +518,6 @@
     .page_online-auction .bo_top .align_box .align1 {display: none}
     
     .page_online-auction .tbl_group.gallery_mode .list > li {width: 33.33%;font-size: 13px}
-    .page_online-auction .tbl_group.gallery_mode .list .d2 {}
     .page_online-auction .tbl_group.gallery_mode .list > li:nth-child(4n) {border-right: 0}
     .page_online-auction .tbl_group.gallery_mode .list > li:nth-child(3n),
     .page_online-auction .tbl_group.gallery_mode .list > li:last-child {border-right: 1px solid #d6d6d6}
@@ -592,7 +591,7 @@
     .page_title_field {padding: 20px 0}
     .page_online-auction .bo_top {margin-bottom: 20px;display: block}
     .page_online-auction .bo_top .search_box {margin: 0 0 10px}
-    .page_online-auction .bo_top .search_box input {width: calc(100% - 178px);}
+    .page_online-auction .bo_top .search_box input {flex: 1 0 auto;width: auto}
     .page_online-auction .bo_top .align_box {justify-content: flex-end}
     
     .page_online-auction .tbl_group.gallery_mode .list > li {border-right: 1px solid #d6d6d6}
@@ -605,7 +604,7 @@
     .page_online-auction .tbl_group.gallery_mode .list .d5 {padding-left: 41%}
     .page_online-auction .tbl_group.gallery_mode .list .d6 {padding-left: 41%}
     .page_online-auction .tbl_group.gallery_mode .list .d7 {padding-left: 41%}
-    .page_online-auction .tbl_group.gallery_mode .list > li > div {padding-left: 41%}
+    .page_online-auction .tbl_group.gallery_mode .list > li > div {padding-left: 41%;white-space: nowrap}
     .page_online-auction .tbl_group.gallery_mode .list .d9 >div {width: 100%;display: flex}
     .page_online-auction .tbl_group.gallery_mode .list .d9 button {width: 50%;height: 40px}
     .page_online-auction .tbl_group.gallery_mode .list .d9 .d9_btn-o {order: -1}
@@ -620,7 +619,7 @@
     .page_online-auction-com .tb1 thead {display: none}
     .page_online-auction-com .tb1 tbody {display: block}
     .page_online-auction-com .tb1 tbody tr {display: block}
-    .page_online-auction-com .tb1 tbody td {display: flex;border-bottom: 0;text-align: left}
+    .page_online-auction-com .tb1 tbody td {display: flex;border-bottom: 0;text-align: left;white-space: nowrap}
     .page_online-auction-com .tb1 .td1 {position: absolute;width: 220px;margin-left: 0}
     .page_online-auction-com .tb1 tr td {margin-left: 240px}
     .page_online-auction-com .tb1 .td1 img {max-height: 320px}
@@ -668,7 +667,11 @@
 @media screen and (max-width: 500px) {
     .page_local .paragraph dl {margin: 0 0 20px}
     .page_local .paragraph dd {display: block;}
-    .bo_table .bo_head select {width: 100%;margin: 5px 0 0}
+    .bo_table .bo_head select {width: 100%;margin: 5px 0 0}   
+    
+    .page_online-auction-com .state .con1 {display: block}
+    .page_online-auction-com .state .con1 .title {width: 100%;margin: 0 0 10px}
+    .page_online-auction-com .state .con1 table {width: 100%}
 }
 
 @media screen and (max-width: 459px) {

@@ -35,8 +35,8 @@ include_once(ROOT_PATH.'/include/header.php');
             </dl>
         </div>
         <div class="under">
-            <a href="#" class="fill">출품작 보기</a>
-            <a href="#">오시는 길</a>
+            <a href="/pages/auction/online-auction.php" class="fill">출품작 보기</a>
+            <a href="/pages/business/local.php">오시는 길</a>
         </div>
     </div>
 </div>

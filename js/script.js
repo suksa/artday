@@ -3,16 +3,14 @@ var mobiMenuFlag = false
 function openMobiMenu() {
     $('.header').addClass('mobile_menu_on')
     $('.header .white_bg').show(300)
-    $('html, body').addClass('mobile_scroll_disbled').on('scroll touchmove mousewheel', function(e){
-        e.preventDefault();
-    });
+    $('html, body').addClass('mobile_scroll_disbled')
     mobiMenuFlag = true
 }
 
 function closedMobiMenu() {
     $('.header').removeClass('mobile_menu_on')
     $('.header .white_bg').hide(300)
-    $('html, body').removeClass('mobile_scroll_disbled').off('scroll touchmove mousewheel')
+    $('html, body').removeClass('mobile_scroll_disbled')
     mobiMenuFlag = false
 }
 
@@ -23,6 +21,10 @@ function layer_on(file) {
 
 function layer_off() {
     $('.common_layer_field').html('')
+}
+
+function headWrapperResize() {
+    $('.head_wrapper').css('height', $(window).height())
 }
 
 $(document).on('click', '.common_layer', function(e) {
@@ -45,10 +47,13 @@ $(function() {
         if (!value) return
         window.open(value, '_blank')
     })
+    headWrapperResize()
 })
 
 $(window).resize(function() {
     if (window.innerWidth > 768) {
         closedMobiMenu()
+    } else {
+        headWrapperResize()
     }
 })
