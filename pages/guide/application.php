@@ -35,9 +35,10 @@ include_once(ROOT_PATH.'/include/header.php');
                 </div>
                 <div class="tr">
                     <div class="th">전화</div>
-                    <div class="td size1">
-                        <input type="text" name="" class="two_input">
-                        <input type="text" name="" class="two_input">
+                    <div class="td space size1">
+                        <input type="text" name="" class="three_input">
+                        <input type="text" name="" class="three_input">
+                        <input type="text" name="" class="three_input">
                     </div>
                 </div>
                 <div class="tr">
@@ -54,6 +55,12 @@ include_once(ROOT_PATH.'/include/header.php');
                         <input type="text" name="" class="basic_input">
                     </div>
                 </div>
+                <div class="tr">
+                    <div class="th"></div>
+                    <div class="td">
+                        <button class="submit_btn">필수 정보 수정</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="column column2">
@@ -63,6 +70,12 @@ include_once(ROOT_PATH.'/include/header.php');
                     <div class="th">제목</div>
                     <div class="td">
                         <input type="text" name="" class="basic_input" placeholder="제목입력">
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="th">추정가격</div>
+                    <div class="td">
+                        <input type="text" name="" class="basic_input" placeholder="추정가격">
                     </div>
                 </div>
                 <div class="tr">
@@ -102,13 +115,10 @@ include_once(ROOT_PATH.'/include/header.php');
                     </div>
                 </div>
                 <div class="tr">
-                    <div class="th">이미지</div>
+                    <div class="th">이미지 업로드</div>
                     <div class="td size1">
-                        <input type="file" name="" class="basic_file mb10">
-                        <input type="file" name="" class="basic_file mb10">
-                        <input type="file" name="" class="basic_file mb10">
-                        <input type="file" name="" class="basic_file mb10">
                         <input type="file" name="" class="basic_file">
+                        <p class="msg">최대 5개까지 파일 업로드가 가능합니다.</p>
                     </div>
                 </div>
             </div>

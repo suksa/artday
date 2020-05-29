@@ -17,15 +17,26 @@ include_once(ROOT_PATH.'/include/header.php');
                     </div>
                 </div>
                 <div class="tr">
+                    <div class="th">기존 비밀번호</div>
+                    <div class="td">
+                        <input type="password" name="" class="basic_input" placeholder="계정 정보 변경시 기존 비밀번호 입력이 필요합니다.">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column column1">
+            <div class="form cus_tb type2">
+                <h3>비밀번호 변경</h3>
+                <div class="tr">
                     <div class="th">비밀번호(6~16자리)</div>
                     <div class="td">
-                        <input type="text" name="" class="basic_input">
+                        <input type="password" name="" class="basic_input" placeholder="비밀번호 변경시에만 입력해주세요.">
                     </div>
                 </div>
                 <div class="tr">
                     <div class="th">비밀번호 재입력</div>
                     <div class="td">
-                        <input type="text" name="" class="basic_input">
+                        <input type="password" name="" class="basic_input" placeholder="비밀번호 변경시에만 입력해주세요.">
                         <p class="msg">-비밀번호는 6 ~ 16 자의 영문 대소문자, 숫자를 조합하여 설정해 주세요.</p>
                         <p class="msg">-안전을 위해 자주 사용했거나 쉬운 비밀번호가 아닌 새 비밀번호를 등록하고 주기적으로 변경해주세요.</p>
                     </div>
@@ -34,7 +45,15 @@ include_once(ROOT_PATH.'/include/header.php');
         </div>
         <div class="column column1">
             <div class="form cus_tb type2">
-                <h3>필수입력 정보</h3>
+                <h3>필수입력 정보 1</h3>
+                <div class="tr">
+                    <div class="th">휴대전화</div>
+                    <div class="td size1">
+                        <input type="text" name="" class="three_input">
+                        <input type="text" name="" class="three_input">
+                        <input type="text" name="" class="three_input">
+                    </div>
+                </div>
                 <div class="tr">
                     <div class="th">이름</div>
                     <div class="td">
@@ -68,12 +87,11 @@ include_once(ROOT_PATH.'/include/header.php');
                         </select>
                     </div>
                 </div>
-                <div class="tr">
-                    <div class="th">이메일</div>
-                    <div class="td">
-                        <input type="text" name="" class="basic_input">
-                    </div>
-                </div>
+            </div>
+        </div>
+        <div class="column column1">
+            <div class="form cus_tb type2">
+                <h3>필수입력 정보 2</h3>
                 <div class="tr">
                     <div class="th">전화</div>
                     <div class="td size1">
@@ -83,11 +101,22 @@ include_once(ROOT_PATH.'/include/header.php');
                     </div>
                 </div>
                 <div class="tr">
-                    <div class="th">휴대전화</div>
+                    <div class="th">이메일</div>
+                    <div class="td">
+                        <input type="text" name="" class="basic_input">
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="th">문자 수신 여뷰</div>
                     <div class="td size1">
-                        <input type="text" name="" class="three_input">
-                        <input type="text" name="" class="three_input">
-                        <input type="text" name="" class="three_input">
+                        <div class="basic_radio two_input">
+                            <input type="radio" id="same1" name="same2">
+                            <label for="same1">발급</label>
+                        </div>
+                        <div class="basic_radio two_input">
+                            <input type="radio" id="same3" name="same2">
+                            <label for="same3">미발급</label>
+                        </div>
                     </div>
                 </div>
                 <div class="tr">
@@ -107,7 +136,28 @@ include_once(ROOT_PATH.'/include/header.php');
         </div>
         <div class="column column1">
             <div class="form cus_tb type2">
-                <h3>추가입력 정보</h3>
+                <h3>결제 정보 입력</h3>
+                <div class="tr">
+                    <div class="th">현금영수증 휴대폰번호</div>
+                    <div class="td size1">
+                        <input type="text" name="" class="three_input">
+                        <input type="text" name="" class="three_input">
+                        <input type="text" name="" class="three_input">
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="th">현금영수증 발급 여부</div>
+                    <div class="td size1">
+                        <div class="basic_radio two_input">
+                            <input type="radio" id="same11_1" name="same11_2">
+                            <label for="same11_1">발급</label>
+                        </div>
+                        <div class="basic_radio two_input">
+                            <input type="radio" id="same11_3" name="same11_2">
+                            <label for="same11_3">미발급</label>
+                        </div>
+                    </div>
+                </div>
                 <div class="tr">
                     <div class="th">은행명</div>
                     <div class="td">
@@ -127,20 +177,33 @@ include_once(ROOT_PATH.'/include/header.php');
                     </div>
                 </div>
                 <div class="tr">
+                    <div class="th">사업자등록번호</div>
+                    <div class="td">
+                        <input type="text" name="" class="basic_input">
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="th">사업자등록증 파일 업로드</div>
+                    <div class="td">
+                        <input type="file" name="" class="basic_file">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column column1">
+            <div class="form cus_tb type2">
+                <h3>추가입력 정보</h3>
+                <div class="tr">
                     <div class="th">뉴스레터수신</div>
                     <div class="td">
                         <div class="size1">
-                            <div class="basic_checkbox three_input">
+                            <div class="basic_checkbox two_input">
                                 <input type="checkbox" id="same5" name="same4">
                                 <label for="same5">아트데이</label>
                             </div>
-                            <div class="basic_checkbox three_input">
+                            <div class="basic_checkbox two_input">
                                 <input type="checkbox" id="same6" name="same4">
                                 <label for="same6">아트데이 옥션</label>
-                            </div>
-                            <div class="basic_checkbox three_input">
-                                <input type="checkbox" id="same7" name="same4">
-                                <label for="same7">수신안함</label>
                             </div>
                         </div>
                         <p class="msg">-아트데이 | 예술계 국내 및 해외 소식을 한 달에 2회 발송합니다.</p>
@@ -195,7 +258,7 @@ include_once(ROOT_PATH.'/include/header.php');
                     </div>
                 </div>
                 <div class="tr">
-                    <div class="th">전화</div>
+                    <div class="th">직장전화</div>
                     <div class="td size1">
                         <input type="text" name="" class="three_input">
                         <input type="text" name="" class="three_input">
@@ -246,6 +309,33 @@ include_once(ROOT_PATH.'/include/header.php');
                                 <input type="checkbox" id="same16" name="same8">
                                 <label for="same16">미술품경매</label>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column column1">
+            <div class="form cus_tb type2">
+                <h3>추가 주소 정보</h3>
+                <div class="tr">
+                    <div class="th">추가 주소1</div>
+                    <div class="td adr">
+                        <button type="button" class="tb_btn tb_btn1">우편번호 검색</button>
+                        <input type="text" name="">
+                        <div class="adr2">
+                            <input type="text" name="" class="basic_input">
+                            <input type="text" name="" class="basic_input">
+                        </div>
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="th">추가 주소1</div>
+                    <div class="td adr">
+                        <button type="button" class="tb_btn tb_btn1">우편번호 검색</button>
+                        <input type="text" name="">
+                        <div class="adr2">
+                            <input type="text" name="" class="basic_input">
+                            <input type="text" name="" class="basic_input">
                         </div>
                     </div>
                 </div>

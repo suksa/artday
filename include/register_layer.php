@@ -322,6 +322,42 @@
         </div>
         <div class="step_content step2">
             <div class="register_wrap">
+               <div class="column column1">
+                    <div class="form cus_tb type2">
+                        <h3>본인인증</h3>
+                        <div class="tr">
+                            <div class="th">이름</div>
+                            <div class="td id_td">
+                                <input type="text" name="" class="basic_input" placeholder="본인인증 버튼을 눌러주세요.">
+                                <button class="id_check">본인인증</button>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="th">성별</div>
+                            <div class="td size1">
+                                <div class="basic_radio two_input">
+                                    <input type="radio" id="same1" name="same2">
+                                    <label for="same1">남성</label>
+                                </div>
+                                <div class="basic_radio two_input">
+                                    <input type="radio" id="same3" name="same2">
+                                    <label for="same3">여성</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="th">생년월일</div>
+                            <div class="td size1">
+                                <input type="text" class="three_input cus1">
+                                <span class="inline_txt">년</span>
+                                <input type="text" class="three_input cus1">
+                                <span class="inline_txt">월</span>
+                                <input type="text" class="three_input cus1">
+                                <span class="inline_txt">일</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="column column1">
                     <div class="form cus_tb type2">
                         <h3>로그인 정보</h3>
@@ -352,39 +388,6 @@
                     <div class="form cus_tb type2">
                         <h3>필수입력 정보</h3>
                         <div class="tr">
-                            <div class="th">이름</div>
-                            <div class="td">
-                                <input type="text" name="" class="basic_input">
-                            </div>
-                        </div>
-                        <div class="tr">
-                            <div class="th">성별</div>
-                            <div class="td size1">
-                                <div class="basic_radio three_input">
-                                    <input type="radio" id="same1" name="same2">
-                                    <label for="same1">남성</label>
-                                </div>
-                                <div class="basic_radio three_input">
-                                    <input type="radio" id="same3" name="same2">
-                                    <label for="same3">여성</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tr">
-                            <div class="th">생년월일</div>
-                            <div class="td size1">
-                                <select name="" id="" class="three_input">
-                                    <option value="">1920</option>
-                                </select>
-                                <select name="" id="" class="three_input">
-                                    <option value="">1</option>
-                                </select>
-                                <select name="" id="" class="three_input">
-                                    <option value="">1</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="tr">
                             <div class="th">이메일</div>
                             <div class="td">
                                 <input type="text" name="" class="basic_input">
@@ -407,6 +410,19 @@
                             </div>
                         </div>
                         <div class="tr">
+                            <div class="th">문자 수신 여부</div>
+                            <div class="td size1">
+                                <div class="basic_radio two_input">
+                                    <input type="radio" id="same10_1" name="same10_2">
+                                    <label for="same10_1">수신</label>
+                                </div>
+                                <div class="basic_radio two_input">
+                                    <input type="radio" id="same10_3" name="same10_2">
+                                    <label for="same10_3">수신안함</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tr">
                             <div class="th">주소</div>
                             <div class="td adr">
                                 <button type="button" class="tb_btn tb_btn1">우편번호 검색</button>
@@ -425,38 +441,16 @@
                     <div class="form cus_tb type2">
                         <h3>추가입력 정보</h3>
                         <div class="tr">
-                            <div class="th">은행명</div>
-                            <div class="td">
-                                <input type="text" name="" class="basic_input">
-                            </div>
-                        </div>
-                        <div class="tr">
-                            <div class="th">계좌번호</div>
-                            <div class="td">
-                                <input type="text" name="" class="basic_input">
-                            </div>
-                        </div>
-                        <div class="tr">
-                            <div class="th">예금주</div>
-                            <div class="td">
-                                <input type="text" name="" class="basic_input">
-                            </div>
-                        </div>
-                        <div class="tr">
                             <div class="th">뉴스레터수신</div>
                             <div class="td">
                                 <div class="size1">
-                                    <div class="basic_checkbox three_input">
+                                    <div class="basic_checkbox two_input">
                                         <input type="checkbox" id="same5" name="same4">
                                         <label for="same5">아트데이</label>
                                     </div>
-                                    <div class="basic_checkbox three_input">
+                                    <div class="basic_checkbox two_input">
                                         <input type="checkbox" id="same6" name="same4">
                                         <label for="same6">아트데이 옥션</label>
-                                    </div>
-                                    <div class="basic_checkbox three_input">
-                                        <input type="checkbox" id="same7" name="same4">
-                                        <label for="same7">수신안함</label>
                                     </div>
                                 </div>
                                 <p class="msg">-아트데이 | 예술계 국내 및 해외 소식을 한 달에 2회 발송합니다.</p>
@@ -511,7 +505,7 @@
                             </div>
                         </div>
                         <div class="tr">
-                            <div class="th">전화</div>
+                            <div class="th">직장전화</div>
                             <div class="td size1">
                                 <input type="text" name="" class="three_input">
                                 <input type="text" name="" class="three_input">
@@ -567,7 +561,7 @@
                         </div>
                     </div>
                     <div class="f_btn_group">
-                        <button class="btn btn_1">취소</button>
+                        <button class="btn btn_1" onclick="layer_off()">취소</button>
                         <button class="btn btn_2">회원가입</button>
                     </div>
                 </div>
