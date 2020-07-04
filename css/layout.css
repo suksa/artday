@@ -12,7 +12,7 @@
 .page_index .view dd {width: calc(100% - 70px)}
 .page_index .view dd a {color: #7d59ff;text-decoration: underline;font-weight: 700}
 .page_index .view .under {margin: 20px 0 0}
-.page_index .view .under a {display: inline-block;padding: 10px 20px;color: #5500b5;background: #fff;border: 1px solid #5500b5;}
+.page_index .view .under a {display: inline-block;padding: 10px 20px;color: #5500b5;background: #fff;border: 1px solid #5500b5;white-space: nowrap;}
 .page_index .view .under a.fill {background: #5500b5;color: #fff}
 
 .main_layer_popup.popup1 {top: 5%;right: 5%}
@@ -59,7 +59,7 @@
 .cus_tb .msg {font-size: 14px;margin: 8px 0 0;word-break: keep-all;}
 .cus_tb .tr {display: flex;padding: 0 15px}
 .cus_tb .tr + .tr {margin: 10px 0 0}
-.cus_tb .th {width: 120px;line-height: 30px;font-weight: 700;font-size: 14px;letter-spacing: -0.04em;}
+.cus_tb .th {width: 120px;line-height: 30px;font-weight: 700;font-size: 14px}
 .cus_tb .td {width: calc(100% - 120px);font-size: 0}
 .cus_tb .td input,
 .cus_tb .td button {font-size: 15px}
@@ -181,6 +181,8 @@
 .bo_table table .confirmation .btn_small {cursor: pointer}
 
 .bo_table table.tbl_type1 td {text-align: center;}
+.bo_table .thumb_size_limit,
+.thumb_size_limit {max-width: 100px;max-height: 130px;}
 
 .pagination {display: inline-block;width: 100%;margin: 20px auto;text-align: center;}
 .pagination > li {display: inline-block;text-align: center;}
@@ -195,14 +197,14 @@
 .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {z-index: 2;color: #23527c;background-color: #eee;border-color: #ddd;}
 
 .page_login {display: flex}
-.page_login h4 {font-size: 22px;letter-spacing: -1px;font-weight: 900;margin-bottom: 30px;}
+.page_login h4 {font-size: 22px;font-weight: 900;margin-bottom: 30px;}
 .page_login .column {width: 50%;padding: 50px}
 .page_login .column.c1 {border-right: 1px solid #eee}
 .page_login .column.c2 {font-size: 14px;line-height:1.5em}
 .page_login .field {float: left;width: calc(100% - 100px);padding: 0 15px 0 0}
 .page_login .field input {width: 100%;height: 47px;border: 1px solid #d2d6de;padding: 6px 12px}
 .page_login .field .id {margin: 0 0 10px}
-.page_login .login_form .submit {float: left;height: 104px;background: #6c00e6;color: #fff;width: 100px;border: 0;outline: none;text-align: center;line-height: 104px;font-weight: 700;}
+.page_login .login_form .submit {float: left;height: 104px;background: #6c00e6;color: #fff;width: 100px;border: 0;outline: none;text-align: center;line-height: 104px;font-weight: 700;-webkit-appearance: none;-webkit-border-radius: 0;}
 .page_login .login_option {margin: 10px 0;font-size: 14px}
 .page_login .login_option input {margin: 0 3px 0 0;vertical-align: middle}
 .page_login .login_option label {font-weight: 700;vertical-align: middle}
@@ -279,7 +281,7 @@
 .page_title_field .page_subject .sup {color: #6c00e5;font-size: 14px;display: block;;margin: 0 0 15px}
 .page_title_field table {}
 .page_title_field table th {color: #b2b2b2;font-weight: 400;padding: 0 5px 0 0}
-.page_title_field table td {}
+.page_title_field table td a {color: #999;text-decoration: underline;}
 
 .page_online-auction {}
 .page_online-auction .bo_top {display: flex;justify-content: space-between;margin: 0 0 30px}
@@ -289,31 +291,35 @@
 .page_online-auction .bo_top .search_box button {float: left;height: 34px;background: #fff;width: 50px;border: 0;background: #8600f6;color: #fff;font-weight: 700;text-align: center}
 .page_online-auction .bo_top .align_box {display: flex}
 .page_online-auction .bo_top .align_box .align1 {display: flex}
-.page_online-auction .bo_top .align_box .align1 button {font-size: 20px;border: 0;color: #bbb;background: #fff;outline: none}
+.page_online-auction .bo_top .align_box .align1 button {font-size: 28px;border: 0;color: #bbb;background: #fff;outline: none}
 .page_online-auction .bo_top .align_box .align1 button:first-child {margin: 0 10px 0 0}
 .page_online-auction .bo_top .align_box .align1 button.on {color: #535353}
 .page_online-auction .bo_top .align_box .align1 button i {}
 .page_online-auction .bo_top .align_box select {width: 200px;height: 34px;background: #fff;padding: 0 5px;border: 1px solid #ccc;margin: 0 0 0 20px;font-size: 13px}
-.page_online-auction .tbl_group {text-align: center;letter-spacing: -0.06em;}
-.page_online-auction .tbl_group .d1 {width: 80px}
+.page_online-auction .tbl_group {text-align: center}
+.page_online-auction .tbl_group .d1 {width: 55px}
 .page_online-auction .tbl_group .d2 {width: 100px}
 .page_online-auction .tbl_group .d3 {width: 135px}
-.page_online-auction .tbl_group .d4 {width: 170px}
+.page_online-auction .tbl_group .d4 {width: 215px}
 .page_online-auction .tbl_group .d5 {width: 130px}
 .page_online-auction .tbl_group .d6 {width: 130px}
 .page_online-auction .tbl_group .d7 {width: 115px}
-.page_online-auction .tbl_group .d8 {width: 80px}
-.page_online-auction .tbl_group .d8 {width: 80px}
+.page_online-auction .tbl_group .d8 {width: 60px}
 .page_online-auction .tbl_group .d9 {width: 100px}
 .page_online-auction .tbl_group .thead {display: flex}
-.page_online-auction .tbl_group .thead div {padding: 10px 0;border-top: 1px solid #d9d9d9;border-bottom: 1px solid #d9d9d9}
+.page_online-auction .tbl_group .thead div {padding: 10px 0;border-top: 1px solid #d9d9d9;border-bottom: 1px solid #d9d9d9;font-weight: 700;color: #999;}
 .page_online-auction .tbl_group .list {}
-.page_online-auction .tbl_group .list > li {display: flex}
+.page_online-auction .tbl_group .list > li {display: flex;height: 150px;}
 .page_online-auction .tbl_group .list > li > div {padding: 12px;display: flex;justify-content: center;align-items: center;line-height: 1.5em;border-bottom: 1px solid #d9d9d9}
-.page_online-auction .tbl_group .list .d1 {color: red}
+.page_online-auction .tbl_group .list .d1 {color: red;font-weight: 700}
 .page_online-auction .tbl_group .list .d2 {padding-left: 10px;padding-right: 10px}
 .page_online-auction .tbl_group .list .d2 > a {width: 100%}
-.page_online-auction .tbl_group .list .d2 img {max-width: 100%;height: auto}
+.page_online-auction .tbl_group .list .d2 img {max-width: 100%;height: auto;max-height: 130px;}
+.page_online-auction .tbl_group .list .d3 {color: #333}
+.page_online-auction .tbl_group .list .d4 {color: #333}
+.page_online-auction .tbl_group .list .d6 {color: #999}
+.page_online-auction .tbl_group .list .d7 {color: #999}
+.page_online-auction .tbl_group .list .d8 {color: #999;font-weight: 700;cursor: pointer;}
 .page_online-auction .tbl_group .list .d5 b {margin: 0 0 0 3px;display: none}
 .page_online-auction .tbl_group .list .d9 button {display: block;width: 70px;font-weight: 700;border: 1px solid #8600f6;background: #fff;color: #8600f6;height: 30px;font-size: 14px}
 .page_online-auction .tbl_group .list .d9 button + button {margin: 5px 0 0}
@@ -363,10 +369,11 @@
 .page_online-auction-d .detail_contents .cont_1 .swiper-slide img {max-width: 100%;max-height: 100%;height: auto}
 .page_online-auction-d .detail_contents .cont_1 .detail_swiper-thumbs {margin: 0;position: absolute;top: 0;right: 25px;height: 380px}
 .page_online-auction-d .detail_contents .cont_1 .detail_swiper-thumbs .swiper-slide {border: 1px solid #d6d6d6;}
-.page_online-auction-d .detail_contents .cont_1 .detail_swiper-thumbs .swiper-slide .thumb {width: 60px;height: 70px;background-size: cover;background-position: center}
+.page_online-auction-d .detail_contents .cont_1 .detail_swiper-thumbs .swiper-slide .thumb {width: 60px;height: 70px;background-size: cover;background-position: center;cursor: pointer}
 .page_online-auction-d .detail_contents .cont_2 {width: 440px;border-top: 1px solid #d9d9d9;padding: 15px 0;margin-bottom: 50px}
 .page_online-auction-d .detail_contents .cont_2 .pic_info {}
 .page_online-auction-d .detail_contents .cont_2 .pic_info li {margin: 0 0 13px;line-height: 1.4em}
+.page_online-auction-d .detail_contents .cont_2 .pic_info li b.name {font-size: 30px}
 .page_online-auction-d .detail_contents .cont_2 .pic_info .li_1 {font-size: 30px;color: #d6d6d6;font-weight: 900;}
 .page_online-auction-d .detail_contents .cont_2 .state {border-top: 1px solid #d9d9d9;padding: 15px 0 0}
 .page_online-auction-d .detail_contents .cont_2 .state li {display: flex;line-height: 30px;height: 30px;margin: 0 0 4px;font-size: 14px}
@@ -384,14 +391,14 @@
 .page_online-auction-d .detail_contents .cont_2 .btn2 .b2 {border: 1px solid #6c00e5;background: #6c00e5;color: #fff;width: 120px;}
 .page_online-auction-d .detail_contents .cont_title {border-bottom: 1px solid #d9d9d9;padding: 0 0 10px;margin: 0 0 10px}
 .page_online-auction-d .detail_contents .cont_3 {padding-bottom: 15px;width: 500px;margin-bottom: 50px}
-.page_online-auction-d .detail_contents .cont_3 .content {color: #a9a9a9;line-height: 1.4em}
+.page_online-auction-d .detail_contents .cont_3 .content {color: #888;line-height: 1.4em}
 .page_online-auction-d .detail_contents .cont_3 .content li+li {margin: 10px 0 0}
 .page_online-auction-d .detail_contents .cont_4 {width: 500px;margin-left: 40px;margin-bottom: 50px}
-.page_online-auction-d .detail_contents .cont_4 .content {font-size: 14px}
+.page_online-auction-d .detail_contents .cont_4 .content {font-size: 14px;line-height: 20px;}
 .page_online-auction-d .detail_contents .cont_4 .content dl {margin: 0 0 40px;display: none}
 .page_online-auction-d .detail_contents .cont_4 .content dl:first-child {display: block}
 .page_online-auction-d .detail_contents .cont_4 .content dt {font-weight: 700;margin: 0 0 15px}
-.page_online-auction-d .detail_contents .cont_4 .content dd {color: #a9a9a9}
+.page_online-auction-d .detail_contents .cont_4 .content dd {color: #888}
 .page_online-auction-d .detail_contents .cont_4 .btn_group {display: flex;justify-content: space-between}
 .page_online-auction-d .detail_contents .cont_4 .btn_group button {padding: 6px 12px;border: 1px solid #6c00e6;background: #fff;color: #6c00e6;font-size: 14px}
 .page_online-auction-d .detail_contents .cont_5 {width: 100%}
@@ -430,7 +437,7 @@
 .page_online-auction-com .tb1 td {text-align: center;line-height: 1.4em;border-bottom: 1px solid #d9d9d9}
 .page_online-auction-com .notice {display: flex;padding: 15px;background: #eee;margin: 0 0 10px}
 .page_online-auction-com .notice .title {font-weight: 700;width: 170px;color: #7d7d7d}
-.page_online-auction-com .notice .content {line-height: 1.5em;font-size: 14px;word-break: keep-all;color: #7d7d7d;}
+.page_online-auction-com .notice .content {line-height: 1.5em;font-size: 14px;word-break: keep-all;color: #666;}
 .page_online-auction-com .state {display: flex;border: 1px solid #d6d6d6;}
 .page_online-auction-com .state .con1 {display: flex;padding: 15px;width: 50%}
 .page_online-auction-com .state .con1 .title {font-weight: 700;width: 120px}
@@ -439,7 +446,7 @@
 .page_online-auction-com .state .con1 table th {width: 90px;color: #9d9d9d;padding: 5px 0}
 .page_online-auction-com .state .con1 table td {padding: 5px 0}
 .page_online-auction-com .state .con1 table td .cal {width: 100%;display: flex;height: 35px;border: 1px solid #d2d6de;max-width: 400px}
-.page_online-auction-com .state .con1 table td .cal input {border: 0;background: #eee;width: calc(100% - 68px);padding: 0 10px;font-weight: 700;font-size: 18px}
+.page_online-auction-com .state .con1 table td .cal input {border: 0;background: #eee;width: 100%;padding: 0 10px;font-weight: 700;font-size: 18px}
 .page_online-auction-com .state .con1 table td .cal button {background: #fff;border: 0;width: 34px;font-size: 23px;font-weight: 700;color: #444}
 .page_online-auction-com .state .con1 table td .cal button.add {border-right: 1px solid #d2d6de}
 .page_online-auction-com .state .con1.info {display: block;}
@@ -455,7 +462,8 @@
 .page_online-auction-com .state .con2 table {border-spacing: 0;width: 100%}
 .page_online-auction-com .state .con2 thead th {background: #eee;font-size: 12px;padding: 5px 6px;text-align: center;}
 .page_online-auction-com .state .con2 tbody td {background: #fff;font-size: 12px;padding: 5px 6px;text-align: center;border-bottom: 1px solid #eee;color: #7d7d7d;}
-.page_online-auction-com .state .con2 .memo {width: 100%;height: 200px;padding: 6px 12px;font-size: 14px;color: #555;border: 1px solid #ccc;resize: none}
+.page_online-auction-com .state .con2 .memo {width: 100%;height: 200px;line-height: 19px;padding: 6px 12px;font-size: 14px;color: #555;border: 1px solid #ccc;resize: none}
+.page_online-auction-com .state .con2 .memo::placeholder {color: #bbb}
 
 @media screen and (max-width: 1299px) {
     .mypage_layout {margin-bottom: 0}

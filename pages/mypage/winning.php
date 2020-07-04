@@ -55,7 +55,7 @@ include_once(ROOT_PATH.'/include/header.php');
                             <p class="date">2020-05-09<br>19:01:03</p>
                         </td>
                         <td class="img">
-                            <img src="http://www.artday.co.kr/_img/data/2005/T/001%201.jpg" alt="" class="w100">
+                            <img src="http://www.artday.co.kr/_img/data/2005/T/001%201.jpg" alt="" class="w100 thumb_size_limit">
                         </td>
                         <td class="lot">20</td>
                         <td class="d_info">

@@ -28,6 +28,7 @@ a {color:#000;text-decoration:none}
 .long_container {width: 1280px;margin-right: auto;margin-left: auto;}
 .clearfix:after {content: '';display: block;clear: both;}
 .text_center {text-align: center;}
+.ex_bold {font-weight: 900;}
 .w100 {width: 100%;height: auto}
 .p10 {padding: 10px}
 .p20 {padding: 20px}

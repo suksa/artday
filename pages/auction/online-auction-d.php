@@ -47,20 +47,32 @@ include_once(ROOT_PATH.'/include/header.php');
                 <div class="swiper-container detail_swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="http://www.artday.co.kr/_img/data/2005/001%201.jpg">
+                            <img src="https://dev.artday.co.kr/cdn/artwork/_img/data/2004/T/001%201.jpg">
                         </div>
                         <div class="swiper-slide">
-                            <img src="http://www.artday.co.kr/_img/data/2005/001 2.jpg">
+                            <img src="https://dev.artday.co.kr/cdn/artwork/_img/data/2004/T/001%204.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://dev.artday.co.kr/cdn/artwork/_img/data/2004/T/001%202.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://dev.artday.co.kr/cdn/artwork/_img/data/2004/T/001%203.jpg">
                         </div>
                     </div>
                 </div>
                 <div class="swiper-container detail_swiper-thumbs">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="thumb" style="background-image:url('http://www.artday.co.kr/_img/data/2005/001%201.jpg')"></div>
+                            <div class="thumb" style="background-image:url('https://dev.artday.co.kr/cdn/artwork/_img/data/2004/T/001%201.jpg')"></div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="thumb" style="background-image:url('http://www.artday.co.kr/_img/data/2005/001 2.jpg')"></div>
+                            <div class="thumb" style="background-image:url('https://dev.artday.co.kr/cdn/artwork/_img/data/2004/T/001%204.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb" style="background-image:url('https://dev.artday.co.kr/cdn/artwork/_img/data/2004/T/001%202.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb" style="background-image:url('https://dev.artday.co.kr/cdn/artwork/_img/data/2004/T/001%203.jpg')"></div>
                         </div>
                     </div>
                 </div>
@@ -68,7 +80,7 @@ include_once(ROOT_PATH.'/include/header.php');
             <div class="cont_2">
                 <ul class="pic_info">
                     <li class="li_1">1</li>
-                    <li class="li_2"><b>김태호</b> Kim TaeHo 1948~</li>
+                    <li class="li_2"><b class="name">김태호</b> Kim TaeHo 1948~</li>
                     <li class="li_3"><b>내재율 201139</b></li>
                     <li class="li_4">
                         27.3×19cm (3호)<br>
@@ -88,7 +100,7 @@ include_once(ROOT_PATH.'/include/header.php');
                         </li>
                         <li>
                             <span>추정가</span>
-                            <b>3,000,000 - 6,000,000</b>
+                            <b class="ex_bold">3,000,000 - 6,000,000</b>
                         </li>
                     </ul>
                     <div class="btn_group">

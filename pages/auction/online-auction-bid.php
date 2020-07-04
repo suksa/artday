@@ -33,7 +33,7 @@ include_once(ROOT_PATH.'/include/header.php');
                 <tr>
                     <td class="td1">
                         <div>
-                            <img src="http://www.artday.co.kr/_img/data/2005/T/001%201.jpg" alt="" class="w100">
+                            <img src="http://www.artday.co.kr/_img/data/2005/T/001%201.jpg" alt="" class="w100 thumb_size_limit">
                         </div>
                     </td>
                     <td class="td2">
@@ -116,8 +116,6 @@ include_once(ROOT_PATH.'/include/header.php');
                             <td colspan="2">
                                 <div class="cal">
                                     <input type="text">
-                                    <button class="add">+</button>
-                                    <button>-</button>
                                 </div>
                             </td>
                         </tr>
