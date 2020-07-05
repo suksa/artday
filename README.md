@@ -78,3 +78,4 @@ artday수정안 작성일: 200705
 - bidding.php - 응찰내역
 - mypage.php - 마이페이지
 - winning.php - 낙찰내역
+
