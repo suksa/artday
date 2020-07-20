@@ -94,8 +94,7 @@ include_once(ROOT_PATH.'/include/header.php');
                     <div class="d8">99</div>
                     <div class="d9">
                         <div>
-                            <button class="d9_btn-full" onclick="location.href='/pages/auction/online-auction-bid.php'">응찰</button>
-                            <button class="d9_btn-o" onclick="location.href='/pages/auction/online-auction-pay.php'">예약응찰</button>
+                            <button class="d9_btn-full tender_message" onclick="location.href='/pages/auction/online-auction-bid.php'">서면응찰</button>
                         </div>
                     </div>
                 </li>
@@ -138,8 +137,7 @@ include_once(ROOT_PATH.'/include/header.php');
                     <div class="d8">99</div>
                     <div class="d9">
                         <div>
-                            <button class="d9_btn-full" onclick="location.href='/pages/auction/online-auction-bid.php'">응찰</button>
-                            <button class="d9_btn-o" onclick="location.href='/pages/auction/online-auction-pay.php'">예약응찰</button>
+                            <button class="d9_btn-full tender_message" onclick="location.href='/pages/auction/online-auction-bid.php'">서면응찰</button>
                         </div>
                     </div>
                 </li>
@@ -279,6 +277,12 @@ $('#list_mode_button').on('click', function() {
 $('#gallery_mode_button').on('click', function() {
     gall_mode()
     currentState = 'gallery'
+})
+    
+$('.tender_message').hover(function() {
+    $(this).after('<div class="tender_message_layer"><div class="tender_message_title">서면응찰이란?</div><p>서면응찰은 응찰자가 작품에 대해 최대 응찰할 금액을 지정하여 서면으로 제출하여 경매 당일 지정한 금액 까지 응찰이 이루어지는 방식입니다.</p><p>서면응찰은 현장, 전화응찰 보다 우선순위에 있으며, 서면 끼리 경합인 경우 먼저 접수된 응찰자가 우선권을 갖습니다.</p><p>예) 서면응찰 800만원 | 800만원 현장응찰시 서면에 우선권</p><p>*서면응찰은 경매 전일 자정까지만 접수받습니다.</p></div>')
+}, function() {
+    $(this).next('.tender_message_layer').remove()
 })
     
 $(window).resize(function() {

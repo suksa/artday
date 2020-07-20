@@ -465,6 +465,13 @@
 .page_online-auction-com .state .con2 .memo {width: 100%;height: 200px;line-height: 19px;padding: 6px 12px;font-size: 14px;color: #555;border: 1px solid #ccc;resize: none}
 .page_online-auction-com .state .con2 .memo::placeholder {color: #bbb}
 
+.tender_message {position: relative}
+.tender_message_layer {position: absolute;border: 1px solid #ccc;border-radius: 5px;font-size: 12px;line-height: 18px;text-align: left;padding: 10px 12px;background: #fff;width: 380px;    transform: translate(calc(-100% - 20px), calc(-50% - 10px));}
+.tender_message_layer:before {content: '';position: absolute;right: -6px;top: calc(50% - 11px);background: #fff;width: 15px;height: 15px;transform: rotate(45deg);border-top: 1px solid #ccc;border-right: 1px solid #ccc;}
+.tender_message_layer:after {content: '';position: absolute;right: 0px;top: calc(50% - 26px);background: #fff;width: 9px;height: 50px;}
+.tender_message_layer p {margin: 10px 0 0}
+.tender_message_title {font-weight: 900}
+
 @media screen and (max-width: 1299px) {
     .mypage_layout {margin-bottom: 0}
     
