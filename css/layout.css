@@ -309,7 +309,7 @@
 .page_online-auction .tbl_group .thead {display: flex}
 .page_online-auction .tbl_group .thead div {padding: 10px 0;border-top: 1px solid #d9d9d9;border-bottom: 1px solid #d9d9d9;font-weight: 700;color: #999;}
 .page_online-auction .tbl_group .list {}
-.page_online-auction .tbl_group .list > li {display: flex;height: 150px;}
+.page_online-auction .tbl_group .list > li {display: flex}
 .page_online-auction .tbl_group .list > li > div {padding: 12px;display: flex;justify-content: center;align-items: center;line-height: 1.5em;border-bottom: 1px solid #d9d9d9}
 .page_online-auction .tbl_group .list .d1 {color: red;font-weight: 700}
 .page_online-auction .tbl_group .list .d2 {padding-left: 10px;padding-right: 10px}
@@ -332,12 +332,13 @@
 .page_online-auction .tbl_group.gallery_mode .list > li:last-child {border-right: 1px solid #d6d6d6}
 .page_online-auction .tbl_group.gallery_mode .list > li > div {width: 100%;border-bottom: 0;justify-content: flex-start;text-align: left}
 .page_online-auction .tbl_group.gallery_mode .list .d1 {order: 1;padding: 10px 10px 0;color: inherit}
-.page_online-auction .tbl_group.gallery_mode .list .d2 {order: -1;margin: 10px 0;height: 250px;overflow: hidden;justify-content: center}
+.page_online-auction .tbl_group.gallery_mode .list .d2 {order: -1;height: 250px;overflow: hidden;justify-content: center;text-align:center}
+.page_online-auction .tbl_group.gallery_mode .list .d2 img {max-width: 100%; max-height: 225px}
 .page_online-auction .tbl_group.gallery_mode .list .d3 {order: 2;padding: 0 10px}
 .page_online-auction .tbl_group.gallery_mode .list .d3 p:nth-child(1) {font-size: 1.2em}
 .page_online-auction .tbl_group.gallery_mode .list .d3 p:nth-child(2),
 .page_online-auction .tbl_group.gallery_mode .list .d3 p:nth-child(3) {display: inline}
-.page_online-auction .tbl_group.gallery_mode .list .d4 {order: 4;border-bottom: 1px solid #d6d6d6;font-size: 0.9em}
+.page_online-auction .tbl_group.gallery_mode .list .d4 {order: 4;border-bottom: 1px solid #d6d6d6;font-size: 0.9em;}
 .page_online-auction .tbl_group.gallery_mode .list .d5 {order: 7;display: flex;justify-content: space-between;padding: 5px 10px 0}
 .page_online-auction .tbl_group.gallery_mode .list .d5:before {content: '현재'}
 .page_online-auction .tbl_group.gallery_mode .list .d5 b {display: inline}
@@ -350,6 +351,7 @@
 .page_online-auction .tbl_group.gallery_mode .list .d8 {display: none}
 .page_online-auction .tbl_group.gallery_mode .list .d9 {order: 8}
 .page_online-auction .tbl_group.gallery_mode .list .d9 button {display: inline-block;vertical-align: top;margin-top: 0}
+.page_online-auction .tbl_group.list_mode .list > li {height: 150px;}
 
 .page_online-auction-d {width: 1040px;margin-left: auto;margin-right: auto}
 .page_online-auction-d .detail_top {display: flex;padding: 10px 0;}
@@ -465,6 +467,7 @@
 .page_online-auction-com .state .con2 .memo {width: 100%;height: 200px;line-height: 19px;padding: 6px 12px;font-size: 14px;color: #555;border: 1px solid #ccc;resize: none}
 .page_online-auction-com .state .con2 .memo::placeholder {color: #bbb}
 
+/* 2020-07-21 JERA 추가 */
 .tender_message {position: relative}
 .tender_message_layer {position: absolute;border: 1px solid #ccc;border-radius: 5px;font-size: 12px;line-height: 18px;text-align: left;padding: 10px 12px;background: #fff;width: 380px;    transform: translate(calc(-100% - 20px), calc(-50% - 10px));}
 .tender_message_layer:before {content: '';position: absolute;right: -6px;top: calc(50% - 11px);background: #fff;width: 15px;height: 15px;transform: rotate(45deg);border-top: 1px solid #ccc;border-right: 1px solid #ccc;}
@@ -593,6 +596,11 @@
     .bo_table table .info_title b {font-weight: 400}
 }
 
+@media screen and (min-width: 769px) {
+    .tbl_group.gallery_mode .list .d2 {border-bottom: 1px solid #eee!important}
+    .page_online-auction .tbl_group.gallery_mode .list .d4 { margin-bottom: auto; border-bottom: 0; }
+    .page_online-auction .tbl_group.gallery_mode .list .d7 { border-top: 1px solid #d6d6d6 }
+ }
 @media screen and (max-width: 768px) {
     .page_index .view {position: static;transform: translateY(0);padding: 20px 25px}
     
